@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "job",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published"
+      ]
+    },
+    "published_date": {
+      "type": "datetime"
+    },
+    "expiration_date": {
+      "type": "datetime"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "sites": {
+      "via": "jobs",
+      "collection": "site",
+      "dominant": true
+    }
+  }
+}

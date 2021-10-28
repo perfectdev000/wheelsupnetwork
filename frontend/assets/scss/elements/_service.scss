@@ -1,0 +1,485 @@
+/* ======================
+    Service Css 
+=========================*/
+
+.service{
+    &.service--1{
+        &.theme-color{
+            background: $theme-color;
+            &::before{
+                border: 1px solid #000;
+            }
+            &:hover{
+                &::before{
+                    border: 2px solid #000 !important;
+                }
+            }
+            .content{
+    
+                a{
+                    &.service-btn{
+                        i{
+                            color: #222 !important;
+                        }
+                        &:hover{
+                            color: #222 !important;
+                            i{
+                                color: #222 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        position: relative;
+        padding: 60px 35px 64px;
+        background: #fff;
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        z-index: 1;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid #eee;
+            opacity: 1;
+            visibility: visible;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        &:hover{
+            -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+            box-shadow: 0 2px 30px rgba(0,0,0,.1);
+            &::before{
+                border-color: #0038E3;
+            }
+        }
+        .icons{
+            margin-bottom: 22px;
+            i{
+                color: $theme-color;
+                font-size: 80px;
+            }
+        }
+        .content{
+            h4{
+                font-size: 18px;
+                line-height: 1.38;
+                margin-bottom: 18px;
+                color: $heading-color;
+                font-family: $body-font;
+                font-weight: 600;
+            }
+            p{
+                color: #333;
+                font-family: 'louis_george_caferegular';
+                letter-spacing: 0em;
+                line-height: 1.32;
+                font-size: 16px;
+            }
+
+            a{
+                &.service-btn{
+                    border: 0;
+                    background-color: transparent;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #222;
+                    display: inline-block;
+                    margin-top: 46px;
+                    padding-right: 25px;
+                    transition: 0.3s;
+                    i{
+                        font-size: 12px;
+                        left: auto;
+                        right: auto;
+                        -webkit-transform: none;
+                        -ms-transform: none;
+                        transform: none;
+                        margin-left: 15px;
+                        color: $theme-color;
+                        transition: 0.3s;
+                    }
+                    &:hover{
+                        color: #0038E3;
+                        i{
+                            color: #0038E3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.bg-transparent{
+        background: transparent;
+        .content{
+            h4{
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+            a.service-btn{
+                color: $white;
+            }
+        }
+    }
+    &.service--2{
+        .thumb{
+            margin-bottom: 35px;
+            img{
+                -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                transition: all .3s cubic-bezier(.645,.045,.355,1);
+            }
+        }
+        .content{
+            h4{
+                color: #fff;
+                font-size: 18px;
+                line-height: 1.4;
+                margin-bottom: 21px;
+                font-weight: 700;
+                font-family: 'Montserrat', sans-serif;
+            }
+            p{
+                color: #ffffff;
+                max-width: 320px;
+                font-weight: 500;
+                letter-spacing: 0em;
+                line-height: 1.6;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 0;
+            }
+        }
+        &:hover{
+            .thumb{
+                img{
+                    -webkit-transform: translateY(-5px);
+                    -ms-transform: translateY(-5px);
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+
+    // Service STyle 3
+    &.service--3{
+        .thumb{
+            overflow: hidden;
+            a{
+                img{
+                    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                }
+            }
+        }
+        .content{
+            padding: 0 20px;
+            text-align: center;
+            h3{
+                font-size: 18px;
+                margin-bottom: 14px;
+                margin-top: 28px;
+                font-weight: 600;
+                letter-spacing: 0em;
+                line-height: 1.23;
+                font-family: $body-font;
+                a{
+                    color: $heading-color;
+                    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+            p{
+                letter-spacing: 0em;
+                line-height: 1.32;
+                font-size: 16px;
+                font-family: $heading-font;
+                color: $body-color;
+            }
+        }
+        &:hover{
+            .thumb{
+                a{
+                    img{
+                        -webkit-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.modern-service-content{
+    p{
+        font-size: 18px !important;
+        line-height: 32px !important;
+        max-width: 470px !important;
+        // Responsive
+        @media #{$md-layout}{
+            max-width: 100% !important;
+        }
+        @media #{$sm-layout}{
+            max-width: 100% !important;
+        }
+    }
+}
+
+
+
+
+.slick-btn.slick-arrow i {
+    font-size: 30px;
+    color: #f10;
+}
+
+
+// Service List
+
+.bk-service-list{
+    .thumb{
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        max-width: 40%;
+
+        @media #{$sm-layout} {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+    }
+    .content{
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 890px;
+    }
+}
+
+
+
+
+
+
+/* Architecture Service */
+
+.architecture-service-container{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+.authenthic-service{
+    h1{
+        &.heading-h1 {
+            @media #{$lg-layout} {
+                font-size: 37px;
+            }
+        }
+    }
+}
+.architecture-bg-thumbnail{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .inner{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        .architecture-hover-image{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-transition: all 1.5s;
+            transition: all 1.5s;
+            opacity: 0;
+            z-index: -1;
+            overflow: hidden;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+
+            &.active{
+                z-index: 1;
+                opacity: 1;
+                -webkit-transform: scale3d(1.05,1.05,1.05);
+                transform: scale3d(1.05,1.05,1.05);
+            }
+            .bg-thumb{
+                -webkit-transition: all 1s;
+                transition: all 1s;
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                &.bg-image--1{
+                    background-image: url('/img/slider/type/bg-image-19.jpg')
+                }
+
+                &.bg-image--2{
+                    background-image: url('/img/slider/type/bg-image-20.jpg')
+                }
+
+                &.bg-image--3{
+                    background-image: url('/img/slider/type/bg-image-21.jpg')
+                }
+
+                &.bg-image--4{
+                    background-image: url('/img/slider/type/bg-image-22.jpg')
+                }
+                &.bg-image--5{
+                    background-image: url('/img/bg/bg-image-68.jpg')
+                }
+
+            }
+        }
+    }
+}
+
+
+
+.architecture-service{
+    min-height: 650px;
+    border-right: 1px solid hsla(0,0%,100%,.21);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: relative;
+    z-index: 9;
+    
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+
+    @media #{$md-layout} {
+        min-height: auto;
+        height: auto;
+        padding: 0 30px;
+    }
+
+    @media #{$sm-layout} {
+        min-height: auto;
+        height: auto;
+        padding: 0 30px;
+    }
+
+
+    .architecture-inner{
+        padding: 97px 50px;
+        
+        @media #{$lg-layout} {
+            padding: 60px 0px;
+        }
+        
+        @media #{$laptop-device} {
+            padding: 97px 19px;
+        }
+
+        @media #{$md-layout} {
+            padding: 60px 0px;
+        }
+
+        @media #{$sm-layout} {
+            padding: 60px 0px;
+        }
+
+        .view-more-btn{
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+            transform: translateY(10px);
+            -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+            transition: all .3s cubic-bezier(.645,.045,.355,1);
+        }
+    }
+    &:hover{
+        .architecture-inner{
+            .view-more-btn{
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+                margin-top: 24px;
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.architecture-service .architecture-inner p {
+    color: #fff;
+}
+
+
+//Service Essential
+.service-content{
+    h3{
+        font-size: 40px;
+        line-height: 1.28;
+        font-weight: 200;
+        margin-bottom: 30px;
+        // Responsive
+        @media #{$lg-layout}{
+            font-size: 28px;
+        }
+        @media #{$md-layout}{
+            font-size: 28px;
+        }
+        @media #{$sm-layout}{
+            font-size: 28px;
+        }
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.78;
+        margin-bottom: 60px;
+    }
+}

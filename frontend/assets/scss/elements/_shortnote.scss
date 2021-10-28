@@ -1,0 +1,106 @@
+/* ===========================
+    Shot Note Css 
+==============================*/
+
+.section-separator-with--border{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+
+// Custom Arrow
+.swiper-custom-arrow {
+    position: relative;
+    .swiper-btn{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 2;
+        color: #fff;
+        width: 55px;
+        height: 108px;
+        font-size: 30px;
+        border: 0 none;
+        background: hsla(0,0%,100%,.5);
+        border-radius: 0;
+        box-shadow: 0 0 5px rgba(0,0,0,.01);
+        // transition: all .3s cubic-bezier(.645,.045,.355,1),visibility .3s linear 2s,opacity .3s linear 2s;
+        transition: 0.4s;
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+
+        &.swiper-btn-prev{
+            border-bottom-right-radius: 108px;
+            border-top-right-radius: 108px;
+            left: 0;
+        }
+        &.swiper-btn-next{
+            left: auto;
+            border-bottom-left-radius: 108px;
+            border-top-left-radius: 108px;
+            right: 0;
+        }
+        &:hover{
+            color: #222;
+            background: #fff;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &:hover {
+        .swiper-btn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+// Custom swiper Dots
+.swiper-custom-dots{
+    position: relative;
+    .swiper-container-horizontal{
+        overflow: visible;
+        position: relative;
+    }
+    .swiper-pagination{
+        position: absolute;
+        z-index: 2;
+        bottom: -60px;
+        
+        @media #{$sm-layout} {
+            bottom: 19px;
+        }
+        .swiper-pagination-bullet{
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            cursor: pointer;
+            border: 0;
+            outline: none;
+            background: #d8d8d8;
+            border-radius: 100%;
+            margin: 0 6px;
+            opacity: 1;
+            &.swiper-pagination-bullet-active{
+                background: #222222;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

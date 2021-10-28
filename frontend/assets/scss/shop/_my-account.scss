@@ -1,0 +1,202 @@
+/*------------------------
+     My account
+--------------------------*/
+
+.panel {
+    .panel-heading {
+        h5 {
+            &.panel-title {
+                background-color: #fff;
+                border: 1px solid #e7e7e7;
+                color: #434343;
+                font-size: 14px;
+                font-weight: 600;
+                margin: 0 0 30px;
+                position: relative;
+                text-transform: uppercase;
+                &.border-none{
+                    border: none !important;
+                    
+                }
+                a {
+                    color: #333;
+                    display: block;
+                    padding: 12px 55px 11px;
+                    position: relative;
+                    &::before {
+                        color: #666666;
+                        content: "\f107";
+                        display: inline-block;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        font-size: 12px;
+                        position: absolute;
+                        right: 10px;
+                        top: 14px;
+
+                    }
+                    &.collapsed {
+                        &::after {
+                            color: #666666;
+                            content: "\f104";
+                            display: inline-block;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 12px;
+                            position: absolute;
+                            right: 10px;
+                            top: 14px;
+                        }
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    &:hover {
+                        color: $heading-color;
+                    }
+                }
+                span {
+                    background-color: $heading-color;
+                    color: #fff;
+                    font-size: 15px;
+                    height: 42px;
+                    left: 0;
+                    line-height: 42px;
+                    position: absolute;
+                    text-align: center;
+                    top: 0;
+                    width: 42px;
+                }
+            }
+        }
+    }
+}
+
+.panel-body {
+    margin-bottom: 50px;
+    & .billing-information-wrapper {
+        background-color: #fff;
+        padding: 30px 20px;
+        border: 1px solid #eaeaea;
+    }
+    & .account-info-wrapper {
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 28px;
+        padding-bottom: 30px;
+        h4 {
+            font-size: 18px;
+            letter-spacing: 0.2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        h5 {
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            margin-top: 7px;
+        }
+    }
+    & .billing-info {
+        margin-bottom: 20px;
+        label {
+            color: #434343;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+        input {
+            background: transparent none repeat scroll 0 0;
+            border: 1px solid #eaeaea;
+            color: #555;
+            height: 40px;
+            border-radius: 5px;
+        }
+    }
+    & .billing-back-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 26px;
+        .billing-back {
+            a {
+                display: inline-block;
+                font-size: 15px;
+                margin-top: 7px;
+                text-transform: uppercase;
+                &:hover {
+                    color: $heading-color;
+                }
+                i {
+                    font-size: 18px;
+                    color: $heading-color;
+                }
+            }
+        }
+        .billing-btn {
+            button {
+                background-color: $heading-color;
+                border: medium none;
+                border-radius: 3px;
+                color: #fff;
+                cursor: pointer;
+                font-weight: 600;
+                line-height: 1;
+                padding: 13px 23px;
+                text-transform: uppercase;
+                transition: all 0.3s ease 0s;
+                &:hover {
+                    background-color: $heading-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    & .entries-wrapper {
+        border: 1px solid #eaeaea;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 1px;
+            left: 50%;
+            top: 0;
+            background-color: #eaeaea;
+            @media #{$sm-layout} {
+                display: none;
+            }
+        }
+        .entries-info {
+            padding: 30px 20px;
+            p {
+                color: #454545;
+                font-size: 15px;
+                margin: 0;
+                text-transform: capitalize;
+            }
+        }
+        .entries-edit-delete {
+            a {
+                background-color: #454545;
+                border-radius: 5px;
+                color: #fff;
+                display: inline-block;
+                letter-spacing: 0.2px;
+                line-height: 1;
+                margin: 0 2px;
+                padding: 12px 15px;
+                text-transform: uppercase;
+                &.edit {
+                    background-color: $heading-color;
+                    &:hover {
+                        background-color: $heading-color;
+                    }
+                }
+                &:hover {
+                    background-color: $heading-color;
+                }
+            }
+            @media #{$sm-layout} {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+

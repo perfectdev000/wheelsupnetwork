@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_programs",
+  "info": {
+    "name": "Partner programs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "publishedDate": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published"
+      ]
+    },
+    "featured_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slider_images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "old_post_id": {
+      "type": "integer"
+    },
+    "author": {
+      "via": "partner_programs",
+      "model": "author"
+    },
+    "customer": {
+      "via": "partner_programs",
+      "model": "customer"
+    },
+    "expiration_date": {
+      "type": "datetime"
+    },
+    "link": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "required": false
+    },
+    "sites": {
+      "via": "partner_programs",
+      "collection": "site",
+      "dominant": true
+    }
+  }
+}

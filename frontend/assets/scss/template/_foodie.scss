@@ -1,0 +1,58 @@
+/* =========================
+    Foodie Css 
+============================*/
+
+.foodie-slider{
+    min-height: 690px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    .foodie-slider-inner{
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-image: url(img/others/foodie.jpg);
+        background-repeat: repeat-x;
+        background-size: cover;
+        // transition: background 0.6s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        // animation: moveSlideshow2 5s linear infinite;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

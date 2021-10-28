@@ -1,0 +1,221 @@
+/* -----------------------------
+Prresentation Area 
+-------------------------------*/
+
+
+.presentation-home{
+
+    @media #{$sm-layout} {
+        height: auto !important;
+        // padding: 200px 0; 
+    }
+
+    .bg-image-1{
+        background-image: url(/img/slider/presentation/home-presentation-image-01.jpg);
+    }
+    .bg-image-2{
+        background-image: url(/img/slider/presentation/home-presentation-image-02.jpg);
+        position: relative;
+        &::before{
+            position: absolute;
+            background: #000;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+    }
+
+    .bg-image-3 {
+        background-image: url(/img/slider/presentation/home-presentation-image-05.jpg);
+    }
+}
+
+.presentation-slider-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .presentation-inner{
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        z-index: 1;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$sm-layout} {
+            display: block;
+            height: auto;
+        }
+
+        &.contact-address-wrapper{
+            .inner{
+                text-align: left;
+                width: 100%;
+                @media #{$laptop-device, $lg-layout, $md-layout} {
+                    padding-left: 81px;
+                }
+
+                @media #{$sm-layout} {
+                    padding: 0 30px;
+                }
+            }
+        }
+        .inner{
+            text-align: center;
+            &.slider{
+                h2{
+                    font-size: 110px;
+                    
+                    @media #{$lg-layout} {
+                        font-size: 70px;
+                    }
+
+                    @media #{$md-layout} {
+                        font-size: 60px;
+                    }
+
+                    @media #{$sm-layout} {
+                        font-size: 50px;
+                    }
+                }
+            }
+
+            &.about-inner{
+
+                @media #{$laptop-device, $lg-layout, $md-layout} {
+                    padding-left: 81px;
+                }
+
+                @media #{$sm-layout} {
+                    padding: 0 30px;
+                }
+
+                .row{
+                    background-image: url(/img/slider/presentation/bgshape.jpg);
+                    background-repeat: no-repeat;
+                    background-position: left -22px center;
+                    background-size: contain; 
+                }
+                .content{
+                    text-align: left;
+                    width: 472px;
+                    max-width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    @media #{$sm-layout} {
+                        width: auto;
+                    }
+                    h6{
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        font-family: $heading-font;
+                        font-size: 48px;
+                        line-height: 1.11;
+                        word-wrap: break-word;
+                        max-width: 100%;
+                        
+                        @media #{$sm-layout} {
+                            font-size: 32px;
+                        }
+
+                        @media #{$md-layout} {
+                            font-size: 35px;
+                        }
+                    }
+                    p{
+                        font-family: $heading-font;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &.about-service{
+                .row{
+                    align-items: center;
+                }
+            }
+
+            &.skill-area{
+                text-align: left;
+                padding-left: 360px;
+                padding-right: 360px;
+                min-height: 563px;
+                background-image: url(/img/slider/presentation/home-presentation-image-04.jpg);
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: top right;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
+                @media #{$laptop-device} {
+                    padding-left: 24px;
+                    padding-right: 100px;
+                }
+                @media #{$md-layout} {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    background-image: none;
+                }
+                @media #{$sm-layout} {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    background-image: none;
+                }
+            }
+        }
+    }
+}
+
+.presentation-home {
+    .swiper-pagination {
+        position: absolute;
+        top: 55%;
+        z-index: 3;
+        right: 67px;
+        padding: 0;
+        margin: 0;
+        .swiper-pagination-bullet {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #eee;
+            margin-bottom: 15px;
+            opacity: 1;
+            &:focus {
+                outline: none;
+            }
+            &-active {
+                background-color: #A810E0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        // res
+        @media #{$md-layout, $sm-layout}{
+            display: none;
+        }
+    }
+}
+
+
+
+
+

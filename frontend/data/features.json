@@ -1,0 +1,30 @@
+
+{
+    "title": "feature title 01",
+    "features": [
+        {
+            "id": 1,
+            "icon": "ion-ios-infinite theme-color",
+            "heading": "Digital Marketing",
+            "text": "We conduct the marketing of products & services using latest digital technologies."
+        },
+        {
+            "id": 2,
+            "icon": "ion-monitor",
+            "heading": "UI/UX designs",
+            "text": "We conduct the marketing of products & services using latest digital technologies."
+        },
+        {
+            "id": 3,
+            "icon": "ion-ios-baseball-outline",
+            "heading": "SEO marketing",
+            "text": "We conduct the marketing of products & services using latest digital technologies."
+        },
+        {
+            "id": 4,
+            "icon": "ion-pinpoint",
+            "heading": "Resource use",
+            "text": "We conduct the marketing of products & services using latest digital technologies."
+        }
+    ]
+}

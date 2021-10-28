@@ -1,0 +1,1064 @@
+/* ===========================
+    Color Two Variation 
+=============================*/
+@for $i from 1 through length($colorList) {
+    body.template-color-#{$i} {
+        .blog-grid {
+            .post-content{
+                .post-inner{
+                    h5{
+                        &.heading{
+                            a {
+                                &:hover{
+                                    color: nth($colorList, $i);
+                                }
+                            }
+                        }
+                    }
+                    h4{
+                        &.heading{
+                            a{
+                                &:hover{
+                                    color: nth($colorList, $i);
+                                }
+                            }
+                        }
+                    }
+                    h3{
+                        &.heading{
+        
+                            a {
+                                &:hover{
+                                    color: nth($colorList, $i);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq-content{
+            h2{
+                color: nth($colorList, $i);
+            }
+        }
+
+        .brook-section-title-corona{
+            h2{
+                color: nth($colorList, $i);
+            }
+        }
+
+        .single-contagion{
+            .contagion-content{
+                h3{
+                    color: nth($colorList, $i);
+                }
+            }
+          
+          }
+
+          .single-symptom{
+            .symptom-content{
+                h3{
+                    color: nth($colorList, $i);
+                }
+            }
+          
+          }
+
+          .single-prevination{
+            .prevination-content{
+                h3{
+                    color: nth($colorList, $i);
+                }
+            }
+        }
+
+        .service{
+            &.service--1{
+                &.theme-color{
+                    background: nth($colorList, $i);
+                }
+            }
+        }
+
+
+        .blog-grid-minimal{
+            &.outline{
+                &.bg-transparant{
+                    border-color: nth($colorList, $i);
+                    .post-content{
+                        .post-meta{
+                            .post-category{
+                                a{
+                                    color: nth($colorList, $i);
+                                }
+                            }
+                        }  
+                    }
+                }
+                &:hover{
+                    border-color: transparent;
+                }
+            }
+        }
+
+
+        .single-svg-icon-box{
+           
+            &.business-icon-box{
+                &:hover{
+                    background: nth($colorList, $i);
+                }
+            }
+        }
+
+
+        .product_review {
+            .description_nav {
+                a {
+                    &.active,
+                    &:hover {
+                        border-bottom: 3px solid nth($colorList, $i);
+                    }
+                }
+            }
+        }
+
+
+        .single-product-details-side{
+            .product-action{
+                a{
+                    border-color: nth($colorList, $i);
+                    background-color: nth($colorList, $i);
+                }
+            }
+        }
+
+        .cart-table {
+            & td.pro-subtotal {
+                & span {
+                    color: nth($colorList, $i);
+                }
+            }
+            & td.pro-addtocart {
+                & button {
+                    border: 1px solid nth($colorList, $i);
+                    background-color: nth($colorList, $i);
+                }
+            }
+        }
+
+        .team.team_style--4 .inner .content-header .social-network .social-list a:hover{
+            color: nth($colorList, $i);
+        }
+
+        .testimonial--horizontal--active .swiper-pagination-custom .progressbar .filled {
+            background: nth($colorList, $i);
+          }
+          .slider-business .video-btn a .video-icon.secondary-color{
+            background: nth($colorList, $i) !important;
+          }
+
+          a.brook-btn.bk-btn-yellow, button.brook-btn.bk-btn-yellow {
+            background: nth($colorList, $i);
+            color: #fff !important;
+          }
+        a.bk-btn.theme-btn, button.bk-btn.theme-btn {
+            background-color: nth($colorList, $i);
+        }
+
+        a.brook-btn.bk-btn-red, button.brook-btn.bk-btn-red {
+            background: nth($colorList, $i);
+        }
+
+            .section-title h3 {
+              color: nth($colorList, $i);
+            }
+          
+            .service {
+              &.service--1 {
+                &:hover::before {
+                  border-color: nth($colorList, $i);
+                }
+          
+                .icons {
+                  margin-bottom: 22px;
+          
+                  i {
+                    color: nth($colorList, $i);
+                    font-size: 80px;
+                  }
+                }
+          
+                .content a.service-btn {
+                  i {
+                    font-size: 12px;
+                    left: auto;
+                    right: auto;
+                    -webkit-transform: none;
+                    -ms-transform: none;
+                    transform: none;
+                    margin-left: 15px;
+                    color: nth($colorList, $i);
+                    -webkit-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    transition: 0.3s;
+                  }
+          
+                  &:hover {
+                    color: nth($colorList, $i);
+          
+                    i {
+                      color: nth($colorList, $i);
+                    }
+                  }
+                }
+              }
+          
+              &.service--3 {
+                .thumb {
+                  overflow: hidden;
+          
+                  a img {
+                    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                  }
+                }
+          
+                .content h3 a:hover {
+                  color: nth($colorList, $i);
+                }
+              }
+            }
+          
+            .title-separator {
+              display: block;
+              line-height: 0px;
+          
+              &::after {
+                content: "";
+                display: inline-block;
+                height: 3px;
+                border-radius: 3px;
+              }
+          
+              &.color-red::after, &.color-blue::after {
+                background: nth($colorList, $i);
+              }
+            }
+          
+            .bk-gradation .item-grid {
+              -webkit-box-flex: 1;
+              -webkit-flex-grow: 1;
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              position: relative;
+              padding: 0 10px;
+          
+              .dot-wrap .dot {
+                background: nth($colorList, $i);
+              }
+          
+              &.custom-color--2 .dot-wrap .dot {
+                background: nth($colorList, $i);
+              }
+          
+              &.custom-color--3 .dot-wrap .dot {
+                background: nth($colorList, $i);
+              }
+          
+              &.custom-color--4 .dot-wrap .dot {
+                background: nth($colorList, $i);
+              }
+            }
+          
+            .post-nav-lisnt .nav-item a:hover {
+              background: nth($colorList, $i);
+            }
+          
+            .portfolio-nav-list .portfolio-page .inner a:hover {
+              color: nth($colorList, $i);
+            }
+          
+            .team {
+              &.team_style--1 .image-wrap {
+                .thumb .overlay.red-color {
+                  background-color: nth($colorList, $i);
+                }
+          
+                .social-networks .inner a {
+                  &[class*=hint--]:after {
+                    background-color: nth($colorList, $i);
+                  }
+          
+                  &.hint--top::before {
+                    border-top-color: nth($colorList, $i);
+                  }
+                }
+              }
+          
+              &.team__style--2 {
+                .thumb .overlay {
+                  background-color: nth($colorList, $i);
+          
+                  &.red-color {
+                    background-color: nth($colorList, $i);
+                  }
+                }
+          
+                &:hover .thumb {
+                  border-color: rgba(0, 56, 227, 0.1);
+                }
+              }
+          
+              &.team__style--3 .thumb .overlay {
+                background-color: nth($colorList, $i);
+          
+                &.red-color {
+                  background-color: nth($colorList, $i);
+                }
+              }
+            }
+          
+            .blog-grid--modern.blog-standard {
+              /* -------------------
+                                Yellow Color  
+                                ---------------------*/
+              /* -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.66);
+              -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.66);
+              box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.66); */
+              border: 1px solid #bfbfbfb3;
+          
+              .post-thumb::after {
+                background: nth($colorList, $i);
+              }
+          
+              .post-read-more {
+                background-color: nth($colorList, $i);
+              }
+          
+              &.blog-yellow-color {
+                .post-thumb::after {
+                  background: nth($colorList, $i);
+                }
+          
+                .post-content .post-inner {
+                  h5.heading a:hover, .post-meta .post-category a:hover {
+                    color: nth($colorList, $i);
+                  }
+                }
+          
+                .post-read-more {
+                  background-color: nth($colorList, $i);
+                  color: #fff;
+                }
+              }
+            }
+          
+            [data-overlay]:before {
+              background-color: nth($colorList, $i);
+            }
+          
+            .team-heading .heading-right button {
+              i {
+                color: nth($colorList, $i);
+              }
+          
+              &:hover {
+                color: nth($colorList, $i) !important;
+              }
+            }
+          
+            .has-center-content .has-centerinner .content {
+              h1.heading::before {
+                background-color: nth($colorList, $i);
+              }
+          
+              .read-more-btn a {
+                i, &:hover {
+                  color: nth($colorList, $i);
+                }
+              }
+            }
+
+        // Minicart Color Variation
+        & .mini-cart {
+            .shopping-cart {
+                border-bottom: 2px solid nth($colorList, $i);
+
+                .shop-inner {
+                    ul {
+                        &.product-list {
+                            li {
+                                .content {
+                                    .inner {
+                                        h4 {
+                                            a {
+                                                &:hover {
+                                                    color: nth($colorList, $i);
+                                                }
+
+                                            }
+                                        }
+                                    }
+
+                                    .delete-btn {
+                                        &:hover {
+                                            color: nth($colorList, $i);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer {
+                    a {
+                        &.cart-btn {
+                            border-color: nth($colorList, $i);
+                            background-color: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Book ToolBar
+        & .brook__toolbar {
+            .inner {
+                a {
+                    &:hover {
+                        color: nth($colorList, $i);
+                    }
+                }
+            }
+        }
+
+        // Blog Grid 
+        .blog-grid {
+            .post-inner {
+                h5 {
+                    &.heading {
+                        &:hover {
+                            color: nth($colorList, $i);
+
+                            a {
+                                color: nth($colorList, $i);
+                            }
+                        }
+                    }
+                }
+
+                .post-meta {
+                    .post-category {
+                        &:hover {
+                            a {
+                                color: nth($colorList, $i);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .theme-color {
+            color: nth($colorList, $i);
+        }
+        .bg_color--2{
+            background: nth($colorList, $i);
+        }
+
+        // Button Color
+        a,
+        button {
+            &.brook-btn {
+                &.bk-btn-theme {
+                    background: nth($colorList, $i);
+                    color: #fff;
+                }
+            }
+        }
+
+        // Essential Button
+        .btn-essential{
+            &:hover{
+                background: nth($colorList, $i) !important;
+                border-color: nth($colorList, $i) !important;
+                color: #fff;
+            }
+        }
+        .red-border{
+            border-color: nth($colorList, $i) !important;
+        }
+        // Icon Color
+        .single-svg-icon-box{
+            .svg-icon{
+                svg{
+                    *{
+                        stroke: nth($colorList, $i) !important;
+                    }
+                }
+            }
+            &:hover{
+                .svg-icon{
+                    svg{
+                        *{
+                            stroke: #fff !important;
+                        }
+                    }
+                } 
+            }
+        }
+
+        .menu-price{
+            color: nth($colorList, $i);
+        }
+
+
+        // Read More Button
+        a {
+            &.moredetails-btn {
+                &:hover {
+                    color: nth($colorList, $i);
+                }
+
+                i {
+                    color: nth($colorList, $i);
+                }
+            }
+        }
+
+        // Mesonry Button Color
+        .messonry-button {
+            button {
+                &.is-checked {
+                    span {
+                        &.filter-text {
+                            color: nth($colorList, $i);
+                        }
+                    }
+                }
+
+                &:hover {
+                    span {
+                        &.filter-text {
+                            color: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+
+            button {
+                span {
+                    &.filter-counter {
+                        background-color: nth($colorList, $i);
+
+                        &::before {
+                            border-top: 4px solid nth($colorList, $i);
+                            border-top-color: nth($colorList, $i);
+                        }
+                    }
+                }
+
+                &:hover {
+                    span {
+                        &.filter-text {
+                            color: nth($colorList, $i);
+                        }
+                    }
+                }
+
+                &.is-checked {
+                    span {
+                        &.filter-text {
+                            color: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Portfolio Color Overlay
+        .portfolio {
+            &.portfolio_style--1 {
+                .port-overlay-info {
+                    background-color: nth($colorList, $i);
+                }
+            }
+        }
+
+        // Testimonial Quote
+        .testimonial_style--2 {
+            .content {
+                .testimonial-info {
+                    .testimonial-quote {
+                        color: nth($colorList, $i);
+                    }
+                }
+            }
+        }
+
+        .testimonial_style--1 {
+            .content {
+                p{
+                    span {
+                        color: nth($colorList, $i);
+                    }
+                }
+                .testimonial-quote {
+                    span {
+                        color: nth($colorList, $i);
+                    }
+                }
+            }
+
+            &:hover {
+                background: nth($colorList, $i);
+                p{
+                    span {
+                        color: $white;
+                    }
+                }
+                .testimonial-quote {
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        // Contact Form
+        .contact-form {
+            &.contact-form--4 {
+                .input-box {
+                    button {
+                        color: nth($colorList, $i);
+                        &:hover{
+                            color: #fff;
+                            background: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+
+            &.contact-form--3{
+                .input-box{
+                    button{
+                        color: nth($colorList, $i);
+                    }
+                }
+            }  
+        }
+
+
+        // Goggle Map Dot
+        .animated-dot {
+            background-color: nth($colorList, $i);
+
+            .middle-dot {
+                background-color: nth($colorList, $i);
+            }
+
+            .signal {
+                background-color: nth($colorList, $i);
+            }
+
+            .signal2 {
+                background-color: nth($colorList, $i);
+            }
+        }
+
+        // Progress Color
+        .progress-charts{
+            .progress{
+                .progress-bar{
+                    background-color: nth($colorList, $i);
+                }
+            }
+        }  
+
+        // Counter Up
+        .brook-counter {
+            .icon {
+                i {
+                    color: nth($colorList, $i);
+                }
+            }
+        }
+
+        // Social Share
+        .social-share {
+            a {
+                &:hover {
+                    color: nth($colorList, $i);
+                }
+            }
+        }
+
+        .social-icon {
+            &.tooltip-layout {
+                li {
+                    a {
+                        &.hint--theme[aria-label]::after {
+                            background: nth($colorList, $i);
+                        }
+
+                        &.hint--theme[aria-label]::before {
+                            border-top-color: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Video Button
+        .video-btn {
+            &.video-icon,
+            .video-icon {
+                background: nth($colorList, $i);
+            }
+        }
+
+        .video-btn-2 {
+            .icon-gradient{
+                &::before {
+                    background-color: nth($colorList, $i);
+                    background-image: -webkit-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+                    background-image: -o-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+                    background-image: linear-gradient(-133deg, #899664 0, nth($colorList, $i) 100%);
+                }
+                &::after{
+                    background-color: nth($colorList, $i);
+                    background-image: -webkit-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+                    background-image: -o-linear-gradient(223deg, #899664 0, nth($colorList, $i) 100%);
+                    background-image: linear-gradient(-133deg, #899664 0, nth($colorList, $i) 100%);
+                }
+            }
+        }
+
+         
+
+        .single-motive-speach {
+            .icon {
+                i {
+                    color: nth($colorList, $i);
+                }
+            }
+        }
+
+        // Accordion
+        .bk-accordion-style--2 {
+            .card-header {
+                .acc-btn {
+                    &[aria-expanded="true"] {
+                        color: nth($colorList, $i);
+
+                        &::before {
+                            color: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-form {
+            input ,
+            textarea{
+                &:focus {
+                    border-color: nth($colorList, $i);
+                }
+                &[type="submit"]{
+                    border-color:  nth($colorList, $i);
+                    background-color:  nth($colorList, $i);
+                }
+            }
+
+
+        }
+
+        // Product Color
+        .product {
+            .product-thumbnail {
+                .product-action {
+                    .action-list {
+                        &.tooltip-layout {
+                            li {
+                                a {
+                                    &:hover {
+                                        background-color: nth($colorList, $i);
+                                        color: #fff;
+                                        border-color: nth($colorList, $i);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Gallrey Css
+        .gallery {
+            .hover-overlay {
+                background-color: nth($colorList, $i);
+            }
+        }
+
+        // Swiper Arrow
+        .swiper-dots-bottom{
+            .swiper-pagination-bullet {
+                &-active {
+                    background: nth($colorList, $i);
+                }
+            }
+        }
+
+        // Blog Grid
+        .blog-grid{
+            .post-content{
+                &::before{
+                    background-color: nth($colorList, $i);
+                }
+            }
+        }
+
+        .blog-grid-no-flex{
+            .post-quote{
+                &::before{
+                    color: nth($colorList, $i);
+                }
+            }
+        }
+
+        .brook-pagination-wrapper{
+            .brook-pagination{
+                li{
+                    a{
+                        border: 1px solid nth($colorList, $i);
+                        &:hover {
+                            background: nth($colorList, $i);
+                        }
+                    }
+        
+                    &.active{
+                        a{
+                            background: nth($colorList, $i); 
+                        }
+                    }
+                }
+            }
+        }
+
+        .bl-sidebar{
+            &.search{
+                button{
+                    &:hover{
+                        background-color: nth($colorList, $i);
+                    }
+                    span{
+                        color: nth($colorList, $i);
+                    }
+                }
+            }
+
+            &.category{
+                .category-list{
+                    li{
+                        a{
+                            &:hover{
+                                color: nth($colorList, $i);
+                            } 
+                        }
+                    }
+                }
+            }
+            &.tag{
+                .inner{
+                    .tagcloud{
+                        li{
+                            a{
+                                &:hover{
+                                    color: nth($colorList, $i);
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+
+        .social-icon{
+            &.icon-solid-rounded{
+                li{
+                    a{
+                        &:hover{
+                            background-color: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Icon Box
+        .icon-box{
+            .inner{
+                .icon{
+                    color: nth($colorList, $i);
+                }
+            }
+        }
+
+        .basic-thick-line-theme-4{
+            border-top: 4px solid nth($colorList, $i);
+        } 
+
+        .pricing-box{
+            .header{
+                .feature-mark{
+                    background-color: nth($colorList, $i);
+                }
+            }
+        }  
+
+
+        a{
+            &.brook-btn{
+                &.bk-btn-dark{
+                    &:hover{
+                        background: nth($colorList, $i);
+                    }
+                }
+            }
+        }
+        
+
+        .bk-list--2 {
+            .list-header{
+                &.with-ckeck{
+                    .marker{
+                        &::before{
+                            color: nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .ht-pricing-list-view {
+            thead{
+                tr{
+                    th{
+                        &.pricing-header{
+                            .feature-park{
+                                background: nth($colorList, $i);
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+
+        .testimonial-color-variation{
+            .swiper-slide-active {
+                .testimonial_style--1{
+                    &.bg-dark{
+                        background: nth($colorList, $i) !important;
+                    }
+                }
+            }
+        }
+        
+        
+        .basic-modern-dots{
+            .dot{
+                background-color: nth($colorList, $i);
+            }
+        } 
+
+        .bk-accordion{
+            .card-header{
+                .acc-btn{
+                    &[aria-expanded="true"]{
+                        background: nth($colorList, $i);
+                    }
+                }
+            }
+        }
+
+        a,
+        button{
+            &.brook-btn{
+                &.bk-btn-theme-border{
+                    border-color: nth($colorList, $i);
+                    color: nth($colorList, $i);
+                    &:hover{
+                        background: nth($colorList, $i);
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+
+        .brook-quote{
+            &::before{
+                color: nth($colorList, $i);
+            }
+        }
+
+        .bk-text-box{
+            &.bg-theme-color{
+                background: nth($colorList, $i);
+            }
+        }
+
+
+        .bk-list--2{
+            .list-header{
+                &.with-number--theme{
+                    .marker{
+                        color: nth($colorList, $i);
+                    }
+                }
+            }
+        }  
+
+        .view-more-btn{
+            a{
+                span{
+                    &.btn-arrow{
+                        color: nth($colorList, $i);
+                    }
+                }
+            }
+        }
+        
+        #fp-nav{
+            ul{
+                li{
+                    a{
+                        &.active{
+                            background-color:  nth($colorList, $i);
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+
+
+body.template-color-5 .bg_color--13 .single-motive-speach .icon i{
+    color: #fff;
+}
+body.template-color-25 .single-svg-icon-box .svg-icon svg *{
+    stroke: #fff !important;
+}
+
+

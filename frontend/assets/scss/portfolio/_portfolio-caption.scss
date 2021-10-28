@@ -1,0 +1,232 @@
+/* =========================
+    Portfolio Caption 
+============================*/
+
+
+.portfolio {
+    &.with-caption {
+        background: #fff;
+        -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+        .thumb {
+            position: relative;
+
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .port-plus-view {
+                width: 68px;
+                height: 68px;
+                line-height: 68px;
+                background: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%) scale(.9);
+                -ms-transform: translate(-50%, -50%) scale(.9);
+                transform: translate(-50%, -50%) scale(.9);
+                font-size: 18px;
+                text-align: center;
+                border-radius: 50%;
+                visibility: hidden;
+                opacity: 0;
+                -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+                &::before {
+                    content: "\f067";
+                    font-family: Font Awesome\ 5 Free;
+                    font-weight: 600;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #222;
+                }
+            }
+        }
+
+        &:hover {
+            .thumb {
+                .port-plus-view {
+                    opacity: 1;
+                    visibility: visible;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .caption-bottom {
+            padding: 27px 30px 41px;
+            @media #{$sm-layout} {
+                padding: 24px 17px 25px;
+            }
+            .info {
+                h5 {
+                    &.heading {
+                        a {
+                            color: $heading-color;
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &.no--padding {
+            .caption-bottom {
+                padding: 0;
+            }
+        }
+
+        &:hover {
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        &.no-translate{
+            &:hover {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        &.hover-image-zoom {
+            .thumb {
+                overflow: hidden;
+
+                a {
+                    img {
+                        width: 100%;
+                        -webkit-transition: all 1s;
+                        transition: all 1s;
+                        background-position: 50%;
+                        background-size: cover;
+                    }
+                }
+            }
+
+            &:hover {
+                -webkit-transform: inherit;
+                -ms-transform: inherit;
+                transform: inherit;
+
+                .thumb {
+                    a {
+                        img {
+                            -webkit-transform: scale(1.05);
+                            -ms-transform: scale(1.05);
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.news-bulletin{
+            .inner{
+                height: 100%;
+            }
+            .paralax-portfolio{
+                height: auto;
+            }
+        }
+
+
+
+
+
+    }
+}
+
+
+
+/* ========================
+    Portfolio Caption 
+===========================*/
+
+.portfolio-cation {
+    position: relative;
+
+    .thumb {
+        img {
+            width: 100%;
+        }
+    }
+
+    .port-overlay-info {
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        overflow: hidden;
+
+        .hover-action {
+            -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+            transform: translateY(100%);
+            padding: 25px;
+            background: #fff;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+            .post-overlay-title {
+                font-size: 20px;
+                line-height: 1.4;
+                margin: 0;
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                font-weight: 600;
+                font-family: $body-font;
+
+                a {
+                    color: $heading-color;
+                }
+            }
+
+            .category {
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                margin-left: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                color: $body-color;
+            }
+        }
+    }
+
+    &:hover {
+        .port-overlay-info {
+            .hover-action {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+
+                .post-overlay-title {}
+
+                .category {}
+            }
+        }
+    }
+
+}

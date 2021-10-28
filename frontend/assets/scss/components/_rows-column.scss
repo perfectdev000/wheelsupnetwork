@@ -1,0 +1,168 @@
+/*============================
+Row And Column 
+================================*/
+
+
+.vc_row-separator{
+    left: 0;
+    line-height: 0;
+    width: 100%;
+    position: absolute;
+    &.tilt_right--bottom{
+        bottom: 0;
+        transform: scaleX(-1);
+    }
+    &.tilt_right--top{
+        transform: scaleY(-1);
+    }
+
+    &.tilt_style--bottom{
+        bottom: 0;
+        transform: inherit;
+    }
+    &.tilt_style--top{
+        transform: scale(-1);
+        top: 0;
+    }
+
+    &.triangle{
+        transform: scaleY(-1);
+        svg{
+            height: 40px;
+            fill: #fff;
+            width: 100%;
+        }
+        &.triangle--top{
+            transform: inherit;
+            svg{
+                height: 27px;
+                fill: #fff;
+                width: 100%;
+            }
+        }
+
+        &.bottom{
+            bottom: 0;
+        }
+        &.triangle-bg-gray{
+            transform: inherit;
+            svg{
+                fill: #f7f7f7;
+                height: 27px;
+            }
+        }
+        &.top{
+            top: 0;
+        }
+
+    }
+
+    &.curve{
+        svg{
+            height: 50px;
+            fill: #69afed;
+            width: 100%; 
+        }
+        &.bottom{
+            bottom: 0;
+        }
+    }
+
+    &.clouds{
+        transform: scale(-1);
+        svg{
+            height: 60px;
+            fill: #69afed;
+            width: 100%;
+        }
+        &.top{
+            top: 0;
+        }
+    }
+
+    &.waves{
+        svg{
+            height: 30px;
+            fill: #69afed;
+            width: 100%;
+        }
+        &.bottom{
+            bottom: 0;
+        }
+    }
+
+    &.circle{
+        svg{
+            fill: #69afed;
+            width: 100%;
+            height: 30px;
+        }
+        &.top{
+            top: 0;
+        }
+    }
+
+    &.square{
+        transform: translate(-50%,50%);
+        width: auto;
+        left: 50%;
+        &.bottom{
+            bottom: 0;
+        }
+        /* svg{
+            height: 90px;
+            fill: #0038E3;
+            width: auto;
+        } */
+    }
+
+}
+
+.wavify-activation{
+    z-index: 2;
+}
+
+
+.row-column-content{
+    .separator{
+        height: 200px;
+    }
+}
+
+
+#firefly {
+    width: 100%;
+    height: 100%;
+}
+
+.constellation-effect{
+    position: relative;
+    canvas {
+        height: 580px !important;
+        width: 100% !important;
+    }
+    .row-column-content{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+}
+
+
+.bg-svg--1 {
+    svg {
+        margin-top: -50px;
+    }
+}
+
+
+
+
+
+
+
+
+

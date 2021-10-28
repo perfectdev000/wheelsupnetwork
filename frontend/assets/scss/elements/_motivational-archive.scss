@@ -1,0 +1,75 @@
+
+/* =================================
+    Motivational Archive 
+=================================*/
+
+
+.bg_image--7{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+
+.motivational-wrap{
+    width: 600px;
+    max-width: 100%;
+    float: right;
+    .motivational-inner{
+        h3{
+            &.title{
+                line-height: 1.32;
+                font-weight: 700;
+                font-size: 48px;
+                margin-bottom: 0;
+                word-wrap: break-word;
+                max-width: 100%;
+                color: $heading-color;
+                
+                @media #{$md-layout} {
+                    font-size: 40px;
+                }
+
+                @media #{$sm-layout} {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+.digital-motivational{
+    padding-top: 17px;
+    padding-bottom: 25px;
+}
+.motivational-thumbnail{
+    text-align: center;
+    img{
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

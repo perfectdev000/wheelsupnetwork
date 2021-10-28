@@ -1,0 +1,134 @@
+/*=================================
+ Type Hover Portfolio Animation 
+===================================*/
+
+.portfolio-type-hover {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 100vh;
+
+    @media #{$md-layout, $sm-layout} {
+        padding-bottom: 0 !important;
+        height: auto;
+        padding: 150px 0;
+        padding-top: 115px !important;
+    }
+
+    .row-xs-center {
+        height: 100%;
+        align-items: center;
+    }
+}
+
+.type-portfolio-wrapper {
+    padding: 30px 100px;
+    // res
+    @media #{$lg-layout, $md-layout, $sm-layout} {
+        padding: 30px 50px;
+    }
+
+    .type-portfolio {
+        margin-top: 55px;
+        // res
+        @media #{$lg-layout, $md-layout, $sm-layout} {
+            margin-top: 22px;
+        }
+
+        h3 {
+            a {
+                color: #666;
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 0;
+                line-height: 1.23;
+                vertical-align: top;
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                font-family: Montserrat, Helvetica, Arial, sans-serif;
+
+                @media #{$lg-layout, $md-layout} {
+                    font-size: 30px
+                }
+
+                @media #{$sm-layout} {
+                    font-size: 24px
+                }
+
+            }
+        }
+
+        h3 {
+            a {
+                &.active {
+                    color: #222;
+                    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                }
+            }
+        }
+    }
+}
+
+/* Type Hover Thumbnail */
+
+.type-portfolio-thumbnail {
+    position: relative;
+    padding: 75px 75px 75px 35px;
+    
+    @media #{$md-layout, $sm-layout} {
+        padding-top: 0;
+    }
+    .inner {
+        position: relative;
+        width: 850px;
+        max-width: 100%;
+        
+        @media #{$md-layout} {
+            width: 500px;
+            margin: auto;
+        }
+        @media #{$sm-layout} {
+            width: 100%;
+            margin: auto;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 100%;
+        }
+        .type-thumbnail-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+            opacity: 0;
+            z-index: -1;
+            overflow: hidden;
+
+            .bg-thumb {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: cover;
+                transform: scale(.9);
+                border-radius: 50%;
+                transition: all 1.5s;
+
+                &.bg-image--1{
+                    background-image: url(/img/portfolio/type-hover/type-hover-1.jpg)
+                }
+            }
+
+            &.active {
+                z-index: 1;
+                opacity: 1;
+
+                .bg-thumb {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

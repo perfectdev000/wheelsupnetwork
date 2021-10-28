@@ -1,0 +1,124 @@
+/* ==========================
+Progress Charts 
+==============================*/
+
+.progress-wrapper{
+    h3{
+        &.heading{
+            font-size: 24px;
+            margin-bottom: 60px;
+        }
+    }
+}
+.progress-charts{
+    overflow: hidden;
+    h6{
+        &.heading{
+            margin-bottom: 13px;
+            text-transform: uppercase;
+            span{
+                &.percent-label{
+                    color: #222;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .progress{
+        height: 4px;
+        overflow: visible;
+        font-size: 14px;
+        background-color: #f5f5f5;
+        border-radius: 0;
+        .progress-bar{
+            overflow: visible;
+            position: relative;
+            background: $theme-color;
+
+            &.custom-color--2{
+                background-color: rgb(126, 211, 33);
+            }
+
+            &.custom-color--3{
+                background-color: rgb(242, 182, 54);
+            }
+
+            &.custom-color--4{
+                background-color: rgb(245, 93, 78);
+            }
+
+            span{
+                &.percent-label{
+                    position: absolute;
+                    color: #222;
+                    right: -7px;
+                    top: -20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.radial-progress ,
+.radial-progress--2{
+    position: relative;
+
+    @media #{$sm-layout} {
+        display: inline-block;
+    }
+    .circle-text{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+
+        span{
+            &.count{
+                font-size: 18px;
+                line-height: 1;
+                font-weight: 600;
+                color: $heading-color;
+                position: relative;
+                &.text-white{
+                    &::after{
+                        color: #fff;
+                    }
+                }
+                &::after{
+                    position: absolute;
+                    content: "%";
+                    right: -14px;
+                    color: #222;
+                }
+            }
+        }
+    }
+}
+
+.radial-progress-single{
+    &.progress-flex{
+        display: flex;
+        align-items: center;
+        
+        @media #{$large-mobile} {
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+/* ========================
+Indie Musician Area 
+============================*/
+.bg_image--52{
+    background-attachment: fixed;
+}
+.musician-address{
+    .marker{
+        i{
+            min-width: 40px;
+            line-height: 44px;
+            font-size: 37px;
+            margin-right: 10px;
+            color: #aaa;
+        }
+    }
+}
+
+.cloud-mixtabs-inner{
+    i{
+        color: #f57323;
+        font-size: 90px;
+    }
+    button{
+        padding: 0 36px;
+        height: 55px;
+        line-height: 53px;
+        border-width: 1px;
+        border-radius: 6px;
+        background: transparent;
+        box-shadow: 0 10px 20px rgba(0,0,0,.07);
+        color: #fff;
+        border-color: rgba(255,255,255,0.4);
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        &:hover{
+            color: #F55D4E;
+            border-color: #fff;
+            background-color: #fff;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+
+
+.cloud-mixtabs-audio{
+    .audio-post-inner{
+        display: flex;
+        padding: 10px;
+        border-radius: 3px;
+        overflow: hidden;
+        .thumbnail{
+            flex-grow: 0;
+            width: 162px;
+            height: 153px;
+            margin: 1px;
+            overflow: hidden;
+            border-radius: 2px 0 0 2px;
+            opacity: 1;
+            img{
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+            @media #{$large-mobile}{
+                display: none;
+            }
+        }
+        .audio-post{
+            flex-grow: 1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

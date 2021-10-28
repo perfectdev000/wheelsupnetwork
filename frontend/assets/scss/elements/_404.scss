@@ -1,0 +1,41 @@
+/*====================
+ 404 Area 
+ =====================*/
+
+
+
+.error-not-found {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .error-inner{
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .error-text{
+            p{
+                font-size: 18px;
+                line-height: 1.95;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .error-button-group{
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

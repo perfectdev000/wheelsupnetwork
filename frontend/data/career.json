@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "position": "Senior designer",
+        "aboutHeading": "ABOUT",
+        "location": "New York City",
+        "desc": "The quality, integrity, and commitment of our employees are key factors in our company’s growth, market presence and our ability to help our clients stay a step ahead of the competition.",
+        "requirementHeading": "REQUIREMENTS",
+        "requirements": [
+            "Ensure high quality delivery",
+            "Experience with social media",
+            "Good command of Java, PHP, etc.",
+            "Participate in business discussions",
+            "Good knowledge of technologies & architecture",
+            "Follow strictly HIPAA and PHI data security guidelines"
+        ]
+    },
+    {
+        "id": 2,
+        "position": "Project manager",
+        "aboutHeading": "ABOUT",
+        "location": "New York City",
+        "desc": "The quality, integrity, and commitment of our employees are key factors in our company’s growth, market presence and our ability to help our clients stay a step ahead of the competition.",
+        "requirementHeading": "REQUIREMENTS",
+        "requirements": [
+            "Ensure high quality delivery",
+            "Experience with social media",
+            "Good command of Java, PHP, etc.",
+            "Participate in business discussions",
+            "Good knowledge of technologies & architecture",
+            "Follow strictly HIPAA and PHI data security guidelines"
+        ]
+    },
+    {
+        "id": 3,
+        "position": "Web Developer",
+        "aboutHeading": "ABOUT",
+        "location": "New York City",
+        "desc": "The quality, integrity, and commitment of our employees are key factors in our company’s growth, market presence and our ability to help our clients stay a step ahead of the competition.",
+        "requirementHeading": "REQUIREMENTS",
+        "requirements": [
+            "Ensure high quality delivery",
+            "Experience with social media",
+            "Good command of Java, PHP, etc.",
+            "Participate in business discussions",
+            "Good knowledge of technologies & architecture",
+            "Follow strictly HIPAA and PHI data security guidelines"
+        ]
+    },
+    {
+        "id": 4,
+        "position": "Marketing Specialist",
+        "aboutHeading": "ABOUT",
+        "location": "New York City",
+        "desc": "The quality, integrity, and commitment of our employees are key factors in our company’s growth, market presence and our ability to help our clients stay a step ahead of the competition.",
+        "requirementHeading": "REQUIREMENTS",
+        "requirements": [
+            "Ensure high quality delivery",
+            "Experience with social media",
+            "Good command of Java, PHP, etc.",
+            "Participate in business discussions",
+            "Good knowledge of technologies & architecture",
+            "Follow strictly HIPAA and PHI data security guidelines"
+        ]
+    }
+]

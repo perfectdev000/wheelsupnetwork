@@ -1,0 +1,205 @@
+/*==========================
+    Player Area CSS 
+===========================*/
+.plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded="true"] {
+	background: $theme-color-2;
+	color: #fff;
+}
+.plyr--full-ui  {
+    input[type="range"]{
+        color: $theme-color-2;
+    }
+}
+.single-audio-player{
+    padding: 15px;
+    & .audio-title{
+        & a{
+            color: $theme-color-2;
+        }
+    }
+    & .plyr{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+}
+
+.single-video-player{
+    video{
+        width: 100%;
+    }
+}
+
+// Coustom Audio Player CSS
+.audio-player-title{
+    .title{
+        font-size: 32px;
+        line-height: 40px;
+        color: $white;
+        max-width: 250px;
+        margin-bottom: 50px;
+        @media #{$sm-layout}{
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// Audio Tab list CSS
+.audio-list-tab{
+    ul{
+        display: block;
+        & li{
+            & a{
+                font-size: 20px;
+                line-height: 28px;
+                color: $white;
+                margin-left: 10px;
+                margin-bottom: 15px;
+                font-weight: 500;
+                display: inline-block;
+                transition: all 0.3s ease-in-out;
+                @media #{$sm-layout}{
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                }
+                &::before{
+                    content: "\f10b";
+                    font-family: "Ionicons";
+                    margin-right: 10px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out;
+                }
+                &.active, &:hover{
+                    &::before{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Audio Track
+.audio-track{
+    position: relative;
+    margin-top: 145px;
+    left: -30%;
+    bottom: -100px;
+    // Responsive
+    @media #{$laptop-device}{
+        left: 0;
+        bottom: -50px;
+    }
+    @media #{$lg-layout}{
+        left: 0;
+        bottom: -30px;
+    }
+    @media #{$md-layout}{
+        left: 0;
+        bottom: 0;
+        margin-top: 100px;
+    }
+    @media #{$sm-layout}{
+        left: 0;
+        bottom: 0;
+        margin-top: 80px;
+    }
+   & .info{
+       & h3{
+            font-size: 20px;
+            line-height: 28px;
+            color: $white;
+            margin-bottom: 0;
+            margin-left: 110px;
+            @media #{$sm-layout}{
+                font-size: 16px;
+                line-height: 22px;
+                margin-left: 80px;
+            }
+       }
+   } 
+   & svg{
+    position: absolute;
+	top: 50%;
+	left: 0;
+	stroke: #fff;
+	width: 90px;
+	height: 90px;
+	background-color: $theme-color;
+	border-radius: 100%;
+	transform: translateY(-50%);
+	pointer-events: none;
+    z-index: 0;
+    @media #{$sm-layout}{
+        width: 60px;
+	    height: 60px;
+    }
+   }
+}
+
+// Play BTN
+audio{
+    display: block;
+    height: 100%;
+}
+.play {
+  position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 3;
+	width: 90px;
+	background: transparent !important;
+	height: 90px;
+	cursor: pointer;
+    transform: translateY(-50%);
+    border: none;
+    @media #{$sm-layout}{
+        width: 60px;
+	    height: 60px;
+    }
+}
+.play::before {
+	content: '';
+    display: block;
+    width: 90px;
+    height: 90px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    opacity: 0;
+    position: relative;
+    left: -8px;
+    top: 0px;
+    @media #{$sm-layout}{
+        width: 60px;
+	    height: 60px;
+    }
+}
+.play::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('img/icons/audio-play.png');
+	background-size: 80%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#circle {
+	visibility: hidden;
+	stroke-width: 5;
+}
+.playing #circle {
+	visibility: visible;
+}
+.playing .play::after {
+	background-image: url('img/icons/audio-push.png');
+}
+.playing .play::before {
+	opacity: 1;
+}

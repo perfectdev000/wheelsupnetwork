@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/evergreens",
+      "handler": "evergreen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/evergreens/count",
+      "handler": "evergreen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/evergreens/:id",
+      "handler": "evergreen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/evergreens",
+      "handler": "evergreen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/evergreens/:id",
+      "handler": "evergreen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/evergreens/:id",
+      "handler": "evergreen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

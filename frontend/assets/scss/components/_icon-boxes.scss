@@ -1,0 +1,458 @@
+/* =====================
+    Icon Boxes 
+========================*/
+
+.black-bg{
+    background-color: #000000 !important;
+}
+.black-bg-two{
+    background-color: #121618 !important;
+}
+.brook-icon-boxes-area{
+    .space_dec--110{
+
+        @media #{$md-layout} {
+            margin-top: 0;
+            // padding-top: 80px;
+        }
+
+        @media #{$sm-layout} {
+            margin-top: 0;
+            // padding-top: 80px;
+        }
+
+    }
+}
+
+.icon-box{
+    &.bg-transparant{
+        .inner{
+            background: transparent;
+        }            
+    }
+    .inner{
+        position: relative;
+        padding: 60px 35px 64px;
+        background: #fff;
+        z-index: 2;
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        
+        &::before{
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid #eee;
+            opacity: 1;
+            visibility: visible;
+            z-index: -1;
+        }
+        .icon{
+            font-size: 80px;
+            margin-bottom: 22px;
+            color: $theme-color;
+            i{
+
+            }
+
+            &.brown-color{
+                color: $brown;
+            }
+        }
+        
+        .svg-icon{
+            .tm-svg{
+                padding: 10px 0 12px;
+                width: 60px;
+                margin: 0 auto;
+            }
+        }
+        .content{
+            h5 {
+                &.heading{
+                    margin-bottom: 18px;
+
+                }
+            }
+            p {
+
+            }
+            a {
+                &.icon-btn{
+                    margin-top: 46px;
+                    display: inline-block;
+                    color: $heading-color;
+                    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    span{
+                        padding: 5px 0;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 12px;
+                        color: $theme-color;
+                        padding-left: 14px;
+                    }
+                    &:hover{
+                        color: $theme-color;
+                    }
+
+                    &.color-red{
+                        i{
+                            color: $red-color;
+                        }
+                        &:hover{
+                            color: $red-color;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+            box-shadow: 0 2px 30px rgba(0,0,0,.1);
+        }
+    }
+
+
+    &.no-border{
+        .inner{
+            padding: 0;
+            &::before{
+                display: none;
+            }
+            &:hover{
+                -webkit-transform: translateY(-5px);
+                -ms-transform: translateY(-5px);
+                transform: translateY(-5px);
+                box-shadow: inherit;
+            }
+        }
+    }
+    &.with-padding{
+        .inner{
+            padding: 60px 35px 64px;
+
+            @media #{$md-layout} {
+                padding: 14px 21px 21px;
+            }
+
+            @media #{$sm-layout} {
+                padding: 10px 8px 32px;
+            }
+        }
+    }
+
+    &.icon-box-style-2{
+        & .icon{
+            flex: 0 0 74px;
+            width: 74px;
+            height: 74px;
+            margin-bottom: 35px;
+            margin-right: 35px;
+        }
+        & .content{
+            h5{
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.3;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* =====================
+    Icon Box Style 
+========================*/
+
+
+.icon-grid-box{
+    grid-template-columns: repeat( 3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    width: 760px;
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    margin-top: 60px;
+
+    @media #{$md-layout} {
+        width: auto;
+    }
+
+    @media #{$sm-layout} {
+        width: auto;
+        grid-row-gap: 30px;
+    }
+
+    @media #{$large-mobile} {
+        grid-template-columns: repeat( 1,1fr);
+    }
+
+    .bk-icon{
+        max-width: 160px;
+
+        @media #{$large-mobile} {
+            max-width: inherit;
+        }
+        .icon{
+            font-size: 80px;
+            width: 160px;
+            height: 160px;
+            display: inline-block;
+            border-radius: 50%;
+            color: #fff;
+            position: relative;
+
+            @media #{$sm-layout} {
+                width: 110px;
+                height: 110px;
+                font-size: 50px;
+            }
+
+            &.bg-color-1{
+                background: #e71361;
+            }
+            &.bg-color-2{
+                background: #ecb505;
+            }
+            &.bg-color-3{
+                background: #116cd7;
+            }
+
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+
+}
+
+.vibrate-style{
+    .icon{
+        & i{
+            font-size: 30px;
+        }
+    }
+    & .content{
+        & h5{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        & p{
+            font-size: 16px;
+            line-height: 1.75;
+            color: #777;
+            font-weight: 400;
+        }
+    }
+    &:hover{
+        & .inner{
+            transform: translateY(0px)
+        }
+    }
+}
+
+// Service SVG Icon Box
+
+.single-svg-icon-box{
+    position: relative;
+    height: 100%;
+    padding: 37px 30px 34px;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,.05);
+    z-index: 9;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+    & .grid-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #222;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: #000000;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    & .inner{
+        position: relative;
+        z-index: 5;
+    }
+    & .svg-icon{
+        width: 60px;
+        margin-bottom: 22px;
+        & svg{
+            *{
+                stroke: #68AE4A;
+            }
+        }
+    }
+    .content{
+        & h5{
+            font-size: 20px;
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+        
+    }
+
+
+    &:hover{
+        background: none;
+        &::before{
+            opacity: 0.5;
+        }
+        .grid-overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+        & .svg-icon{
+            & svg{
+                *{
+                    stroke: $white;
+                }
+            }
+        }
+        .content{
+            h5{
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+        }
+    }
+    &.business-icon-box{
+        position: relative;
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        & .grid-overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+        & .svg-icon{
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 22px;
+            transition: all .3s cubic-bezier(.645,.045,.355,1);
+            & svg{
+                *{
+                    stroke: $white !important;
+                }
+            }
+        }
+        .content{
+            position: relative;
+            z-index: 1;
+            h5{
+                color: $white;
+                transition: all .3s cubic-bezier(.645,.045,.355,1);
+            }
+            p{
+                color: $white;
+                font-family: $CerebriSans;
+                transition: all .3s cubic-bezier(.645,.045,.355,1);
+            }
+        }
+        .br-icon-box-btn{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            color: $white;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin: 0;
+            padding-right: 0;
+            display: block;
+            transition: all .3s cubic-bezier(.645,.045,.355,1);
+            a{
+                color: $white;
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding: 5px 0;
+                display: block;
+            }
+        }
+
+        &:hover{
+            background-image: none;
+            background: none;
+            box-shadow: 0 0 30px -15px rgba(51,51,51,.25);
+            background: #c75353;
+            &::before{
+                display: none;
+            }
+            & .grid-overlay{
+                opacity: 0;
+                visibility: hidden;
+            }
+            & .svg-icon{
+                transform: translateY(-50px);
+                opacity: 0;
+                visibility: hidden;
+            }
+            & .content{
+                h5{
+                    transform: translateY(-50px);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                p{
+                    transform: translateY(-75px);
+                }
+            }
+            .br-icon-box-btn{
+                transform: translate(-50%, 15px);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

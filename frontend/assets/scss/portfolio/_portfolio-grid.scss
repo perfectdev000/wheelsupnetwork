@@ -1,0 +1,375 @@
+/* =============================
+    Portfolio Grid Area 
+==============================*/
+
+
+.portfolio{
+    position: relative;
+    /* Portfolio Style 1 */
+    &.portfolio_style--1{
+        .thumb{
+            img{
+                width: 100%;
+            }
+        }
+
+        .port-overlay-info{
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+            transition: all .3s cubic-bezier(.645,.045,.355,1);
+            background-color: #0038E3;
+            .hover-action{
+                text-align: center;
+                padding: 0 15px;
+                top: 50%;
+                position: absolute;
+                width: 100%;
+                transform: translateY(-50%);
+                h3{
+                    &.post-overlay-title{
+                        opacity: 0;
+                        -webkit-transition: .3s ease-out 0s;
+                        transition: .3s ease-out 0s;
+                        -webkit-transform: translateY(10px);
+                        -ms-transform: translateY(10px);
+                        transform: translateY(10px);
+                        font-size: 18px;
+                        line-height: 1.4;
+                        color: #fff;
+                        margin: 0;
+                        font-weight: 600;
+                        letter-spacing: 0em;
+                        font-family: $body-font;
+
+                        @media #{$sm-layout} {
+                            font-size: 20px;
+                        }
+                        a{
+                            color: #fff;
+                        }
+
+                        &.font-24{
+                            font-size: 24px;
+                            @media #{$sm-layout} {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+              
+                .category{
+                    font-weight: 500;
+                    font-size: 14px;
+                    opacity: 0;
+                    -webkit-transition: .3s ease-out 0s;
+                    transition: .3s ease-out 0s;
+                    -webkit-transform: translateY(10px);
+                    -ms-transform: translateY(10px);
+                    transform: translateY(10px);
+                    margin-top: 10px;
+                    color: #fff;
+                }
+            }
+            // Font Playfier
+            &.font-playfair{
+                .hover-action{
+                    h3 {
+                        &.post-overlay-title{
+                            font-size: 24px;
+                            font-family: "Playfair Display", Georgia, serif;
+                            @media #{$sm-layout} {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.lg-font{
+                .hover-action{
+                    h3{
+                        &.post-overlay-title{
+                            font-size: 30px;
+                            font-weight: 700;
+                            line-height: 1.24;
+                        }
+                    }
+                    .category{
+                        font-style: italic;
+                        font-size: 15px;
+                        position: relative;
+                        padding-left: 50px;
+                        &::before{
+                            position: absolute;
+                            top: 12px;
+                            left: 0;
+                            content: "";
+                            width: 40px;
+                            height: 1px;
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+
+            &.position-left{
+                .hover-action{
+                    padding: 40px;
+                    top: 0;
+                    position: absolute;
+                    transform: translateY(0);
+                    text-align: left;
+                    @media #{$sm-layout} {
+                        padding: 10px;
+                    }
+                }
+            }
+            
+            &.position-bottom{
+                .hover-action{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: auto;
+                    padding: 37px 28px;
+                    transform: translateY(0);
+                    text-align: left;
+
+                }
+            }
+
+            &.with-caption{
+                .hover-action{
+                    h3{
+                        &.post-overlay-title{
+                            -webkit-transform: translateY(-10px);
+                            -ms-transform: translateY(-10px);
+                            transform: translateY(-10px);
+                            -webkit-transition: .3s ease-out 0s;
+                            transition: .3s ease-out 0s;
+                        }
+                    }
+                }
+            }
+
+        }
+        // Portfolio Balck Shpe
+        &.bg-black-shape{
+
+            .port-overlay-info{
+                background-color: transparent;
+            }
+            .port-black-overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                visibility: hidden;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background: -webkit-linear-gradient(bottom,#000,transparent 50%);
+                background: linear-gradient(0deg,#000 0,transparent 50%);
+                -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                transition: all .3s cubic-bezier(.645,.045,.355,1);
+            }
+            
+        }
+        &.rgb-color{
+            &:hover{
+                .port-overlay-info{
+                    background: linear-gradient(0deg, rgba(114,2,187,1) 25%, rgba(50,100,245,1) 100%) !important;
+                }
+            }
+        }
+        // Portfolio Hover Effect
+        &:hover{
+            .port-overlay-info{
+                visibility: visible;
+                opacity: .9;
+                h3{
+                    &.post-overlay-title{
+                        opacity: 1;
+                        -webkit-transition: .5s ease-out .2s;
+                        transition: .5s ease-out .2s;
+                        -webkit-transform: translateY(0);
+                        -ms-transform: translateY(0);
+                        transform: translateY(0);
+                    }
+                }
+                .category{
+                    opacity: 1;
+                    -webkit-transition: .5s ease-out .2s;
+                    transition: .5s ease-out .2s;
+                    -webkit-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    transform: translateY(0);
+                }
+            }
+            .port-overlay-info{
+                &.with-caption{
+                    .hover-action{
+                        h3{
+                            &.post-overlay-title{
+                                opacity: 1;
+                                -webkit-transition: .5s ease-out .2s;
+                                transition: .5s ease-out .2s;
+                                -webkit-transform: translateY(0);
+                                -ms-transform: translateY(0);
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+            }
+            &.bg-black-shape{
+                .port-black-overlay{
+                    visibility: visible;
+                    opacity: .9;
+                }
+            }
+
+        }
+    }
+
+    /* Portfolio Style 2 */
+    &.portfolio_style--2{
+        width: auto !important;
+        box-sizing: border-box;
+        .thumb{
+            display: block;
+            img{
+                width: auto;
+                height: 550px;
+            }
+        }
+        .portfolio-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background: -webkit-linear-gradient(bottom,#000,transparent 50%);
+            background: linear-gradient(0deg,#000 0,transparent 50%);
+            -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+            transition: all .3s cubic-bezier(.645,.045,.355,1);
+        }
+        .port-overlay-info{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+            opacity: 0;
+            .content{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 37px 28px;
+                h3{
+                    &.port-title{
+                        opacity: 0;
+                        -webkit-transition: .3s ease-out 0s;
+                        transition: .3s ease-out 0s;
+                        -webkit-transform: translateY(-10px);
+                        -ms-transform: translateY(-10px);
+                        transform: translateY(-10px);
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 1.24;
+                        color: #fff;
+                        margin: 0 0 7px;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+                .category{
+                    position: relative;
+                    padding-left: 50px;
+                    opacity: 0;
+                    -webkit-transition: .3s ease-out 0s;
+                    transition: .3s ease-out 0s;
+                    -webkit-transform: translateY(10px);
+                    -ms-transform: translateY(10px);
+                    transform: translateY(10px);
+                    color: #fff;
+                    font-style: italic;
+                    font-size: 15px;
+                    &::before{
+                        position: absolute;
+                        top: 12px;
+                        left: 0;
+                        content: "";
+                        width: 40px;
+                        height: 1px;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        
+        &:hover{
+            .portfolio-overlay{
+                visibility: visible;
+                opacity: .9;
+            }
+            .port-overlay-info{
+                visibility: visible;
+                opacity: 1;
+
+                .content{
+                    h3{
+                        &.port-title{
+                            opacity: 1;
+                            -webkit-transition: .5s ease-out .2s;
+                            transition: .5s ease-out .2s;
+                            -webkit-transform: translateY(0);
+                            -ms-transform: translateY(0);
+                            transform: translateY(0);
+                        }
+                    }
+                    .category{
+                        opacity: 1;
+                        -webkit-transition: .5s ease-out .2s;
+                        transition: .5s ease-out .2s;
+                        -webkit-transform: translateY(0);
+                        -ms-transform: translateY(0);
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

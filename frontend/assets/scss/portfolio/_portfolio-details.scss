@@ -1,0 +1,144 @@
+/* ========================
+Portfolio Details
+===========================*/
+
+.bg_image--38 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.portfolio-details-list {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 62px 30px;
+    .details-list {
+        label{
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        span{
+            color: #999;
+            font-weight: 500;
+            letter-spacing: 0em;
+            line-height: 1.58;
+            font-size: 14px;
+            display: block;
+            a{
+                color: #999;
+                transition: 0.4s;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+/*==========================
+Portfolio Nav Page 
+============================*/
+
+.portfolio-nav-list{
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$sm-layout} {
+        display: block;
+    }
+
+    .portfolio-page{
+        .inner{
+            a{
+                display: block;
+                color: #999;
+                transition: all .3s cubic-bezier(.645,.045,.355,1);
+               
+                h3{
+                    line-height: 1.42;
+                    margin: 22px 0 0;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 24px;
+                        font-family: Font Awesome\ 5 Free;
+                        font-weight: 900;
+                    }
+                }
+
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        &.prev{
+            padding-left: 100px;
+            text-align: left;
+
+            @media #{$md-layout, $sm-layout} {
+                padding-left: 60px;
+            }
+
+            .inner{
+                a{
+                    
+                    h3{
+                        &::before{
+                            left: -100px;
+                            content: "\f060";
+                            @media #{$md-layout, $sm-layout} {
+                                left: -60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.next{
+            padding-right: 100px;
+            text-align: right;
+
+            @media #{$md-layout, $sm-layout} {
+                padding-right: 60px;
+            }
+
+            .inner{
+                a{
+                    h3{
+                        &::before{
+                            right: -100px;
+                            content: "\f061";
+
+                            @media #{$md-layout, $sm-layout} {
+                                right: -60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

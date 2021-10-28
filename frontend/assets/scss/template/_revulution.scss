@@ -1,0 +1,116 @@
+/* =====================
+Revulion Area 
+========================*/
+
+
+
+.revolution-slider-area {
+    &.slider-bg-1{
+        background-image: url(img/slider/revolution/slider-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+    .slider-bg-2{
+        background-image: url(img/slider/revolution/slider-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% -305%;
+    }
+    .inner{
+        h1{
+            &.heading{
+                line-height: 1.25;
+                font-weight: 700;
+                font-size: 120px;
+
+                @media #{$md-layout} {
+                    font-size: 70px;
+                }
+
+            }
+        }
+        .slider-btn{
+            margin-top: 45px;
+            a{
+                display: inline-block;
+                min-height: 55px;
+                line-height: 51px;
+                padding: 0 36px;
+                height: 55px;
+                line-height: 51px;
+                border-radius: 6px;
+                background: transparent;
+                -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                border: 2px solid #fff;
+                color: #fff;
+
+                &:hover{
+                    -webkit-transform: translateY(-3px);
+                    -ms-transform: translateY(-3px);
+                    transform: translateY(-3px);
+                    background: #fff;
+                    border-color: #fff;
+                    color: #222;
+                }
+            }
+        }
+    }
+
+}
+
+.max-width--990{
+    max-width: 990px;
+    margin: auto;
+}
+
+
+
+.revulutionlink{
+    h3{
+        &.heading{
+            position: relative;
+            display: inline-block;
+            margin-top: 25px;
+            @media #{$sm-layout} {
+                font-size: 20px;
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                margin-top: 15px;
+                opacity: .4;
+                background: currentColor;
+            }
+        }
+    }
+}
+
+
+
+.rvbody {
+    transition: background 1s ease;
+    background: #3d088e;
+}
+
+.scroll-bt-100{
+    bottom: 100px;
+    // Responsive
+    @media #{$sm-laptop-device}{
+        bottom: 230px;
+    }
+    @media #{$lg-layout}{
+        bottom: 80px;
+    }
+    @media #{$custom-lg-layout}{
+        bottom: 0 !important;
+    }
+    @media #{$sm-layout}{
+        bottom: 0px;
+    }
+}
+
+

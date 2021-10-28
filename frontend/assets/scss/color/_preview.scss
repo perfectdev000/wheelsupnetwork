@@ -1,0 +1,292 @@
+/* =====================
+    Preview Area 
+========================*/
+.preview-html {
+    scroll-behavior: smooth;
+} 
+
+
+.pv-service-wrapper{
+    grid-template-columns: repeat( 4,1fr);
+    grid-row-gap: 50px;
+    display: -ms-grid;
+    display: grid;
+
+    @media #{$md-layout} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media #{$sm-layout} {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-grid{
+        .inner{
+            max-width: 390px;
+            margin: 0 auto;
+            padding: 0 15px;
+            h4{
+                font-size: 20px;
+                font-family: $body-font;
+                line-height: 1.4;
+                margin-bottom: 0;
+                word-wrap: break-word;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+/*======================
+Metro Grid Style 3 
+==========================*/
+
+.preview-grid-metro {
+    .preview-item{
+        text-align: center;
+        .thumb{
+            position: relative;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+            transition: all .3s cubic-bezier(.65,.05,.36,1);
+        }
+        .pv-port-info{
+            h5{
+                a{
+                    color: $heading-color;
+                    font-size: 18px;
+                    line-height: 1.39;
+                }
+            }
+        }
+        &:hover{
+            .thumb{
+                transform: translateY(-20px);
+            }
+        }
+    }
+
+
+}
+
+.background-marque2 {
+    // background-image: url(img/preview-image/brook-landing-marque-image-01.jpg);
+    background-repeat: repeat-x;
+    background-size: auto; 
+}
+
+.demo-section-title{
+    h1{
+        font-weight: 700;
+        display: inline-block;
+        background: -webkit-linear-gradient(right, #ffb87d 5%, #ff3d99 95%);
+        background: linear-gradient(-90deg, #ffb87d 5%, #ff3d99 95%);
+        color: transparent;
+        background-clip: text;
+        font-size: 150px;
+        sup {
+            font-size: .33em;
+            vertical-align: super;
+            font-weight: 700;
+            margin-left: -9px;
+            background: -webkit-linear-gradient(right, #ffb87d 5%, #ff3d99 95%);
+            background: linear-gradient(-90deg, #ffb87d 5%, #ff3d99 95%);
+            color: transparent;
+            background-clip: text;
+        }
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.4;
+
+    }
+    p{
+        font-size: 16px;
+        width: 730px;
+        color: #888888;
+        line-height: 1.88;
+        margin: auto;
+        margin-bottom: 110px;
+        
+        @media #{$md-layout, $sm-layout} {
+            max-width: 730px;
+            width: 100%;
+        }
+    }
+}
+
+.pv-masonry-wrapper{
+    padding: 0 140px;
+}
+
+
+
+
+/*============================
+    Template Layout 
+=============================*/
+.pv-template-layout{
+    &.layout-bg{
+        // background-image: url(img/preview-image/brook-landing-immensity-of-template-bg.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-color: #e9eef0;
+    }
+}
+
+.pv-single-feature{
+    width: 780px;
+    max-width: 100%;
+    padding: 0 110px;
+    .feature-head{
+        font-size: 131px;
+        line-height: 1;
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#FAEFAE),color-stop(100%,#F09659));
+        background: -moz-linear-gradient(-90deg,#FAEFAE 0,#F09659 100%);
+        background: -webkit-linear-gradient(-90deg,#FAEFAE 0,#F09659 100%);
+        background: -o-linear-gradient(-90deg,#FAEFAE 0,#F09659 100%);
+        background: -ms-linear-gradient(-90deg,#FAEFAE 0,#F09659 100%);
+        background: linear-gradient(-90deg,#FAEFAE 0,#F09659 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-weight: 700;
+        display: inline-block;
+        sup {
+            font-size: .33em;
+            vertical-align: super;
+            font-weight: 700;
+            margin-left: 19px;
+            background: inherit;
+            color: transparent;
+            top: -.5em;
+        }
+    }
+    .content{
+        h2{
+            &.heading-h2{
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.pv-bg-color-1{
+    background-color: #e9eef0;
+}
+
+/*======================
+preview Area 
+=========================*/
+
+.pv-footer-area{
+    background-color: #e63a65;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    .footer-bg-2{
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}
+
+// Responsive Css
+@media #{$laptop-device}{
+    .pv-masonry-wrapper {
+        padding: 0 60px;
+    }
+    .pv-single-feature .content h2.heading-h2 {
+        font-size: 33px;
+    }
+    .pv-single-feature .feature-head {
+        font-size: 82px;
+    }
+    .pv-single-feature .feature-head sup{
+        margin-left: -1px;
+    }
+}
+
+@media #{$lg-layout}{
+
+    .demo-section-title p{
+        margin-bottom: 61px;
+    }
+    .pv-single-feature .feature-head{
+        font-size: 112px;
+    }
+    .pv-template-layout.layout-bg{
+        background-size: cover;
+        padding-bottom: 150px;
+    }
+    .pv-masonry-wrapper{
+        padding: 0 50px;
+    }
+}
+
+@media #{$md-layout}{
+    .pv-template-layout.layout-bg{
+        background-size: cover;
+        padding-bottom: 150px;
+    }
+    .pv-masonry-wrapper {
+        padding: 0 60px;
+    }
+    .pv-single-feature .feature-head{
+        font-size: 116px;
+    }
+    .preview-flexable .slick-gutter-40 .slick-slide {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .pv-single-feature{
+        padding: 0 50px;
+    }
+}
+
+@media #{$sm-layout}{
+    .pv-template-layout.layout-bg{
+        background-size: cover;
+        padding-bottom: 150px;
+    }
+    .pv-masonry-wrapper {
+        padding: 0 30px;
+    }
+    .pv-single-feature .feature-head{
+        font-size: 116px;
+    }
+    .demo-section-title p{
+        margin-bottom: 46px;
+        font-size: 14px;
+    }
+    .demo-section-title h2{
+        font-size: 25px;
+    }
+    .demo-section-title h1{
+        font-size: 107px;
+    }
+    .pv-single-feature{
+        padding: 0 50px;
+    }
+    .tp-caption.display-your{
+        padding: 0 20px !important;
+    }
+    .tp-caption.display-range{
+        padding: 0 20px !important;
+        font-size: 14px !important;
+        top: 39px;
+    }
+    .pv-single-feature .content h2.heading-h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+

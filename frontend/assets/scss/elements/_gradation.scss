@@ -1,0 +1,245 @@
+/* ==========================
+    Gradation Area 
+============================*/
+
+
+
+.bk-gradation{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    @media #{$sm-layout} {
+        flex-wrap: wrap;
+    }
+    .item-grid{
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        position: relative;
+        padding: 0 10px;
+        .line{
+            position: absolute;
+            top: 40px;
+            right: 100%;
+            -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+            transform: translateX(50%);
+            background: #ddd;
+            width: 60%;
+            height: 1px;
+            @media #{$sm-layout} {
+                display: none;
+            }
+        }
+        .dot-wrap{
+            max-width: 270px;
+            position: relative;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto 24px;
+            .dot{
+                background: $theme-color;
+                &::before,
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                    border-radius: 50%;
+                    background: inherit;
+                }
+
+                &::before{
+                    width: 80px;
+                    height: 80px;
+                    opacity: .3;
+                }
+                &::after{
+                    width: 60px;
+                    height: 60px;
+                    opacity: .7;
+                }
+                .count{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #fff;
+                    background: inherit;
+                    border-radius: 50%;
+                    text-align: center;
+                    z-index: 3;
+                    font-family: $body-font;
+                }
+            }
+        }
+        .content{
+            position: relative;
+            text-align: center;
+            max-width: 270px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 38px 30px 44px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.06);
+            -webkit-filter: drop-shadow(0 10px 30px rgba(0,0,0,.06));
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,.06));
+            -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+            transition: all .3s cubic-bezier(.645,.045,.355,1);
+            &::before{
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                content: "";
+                border-bottom: 13px solid #fff;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                transition: all .3s cubic-bezier(.645,.045,.355,1);
+            }
+            &.bg-black{
+                background: #000;
+                color: $white;
+                &::before{
+                    border-bottom-color: #000;
+                }
+                h5{
+                    color: $white;
+                }
+            }
+
+            h5{
+                &.heading{
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                }
+            }
+            p{
+                &.bk_pra{
+
+                }
+            }
+        }
+
+        &:first-child{
+            .line{
+                display: none;
+            }
+        }
+
+        &:hover{
+            .content{
+                background: #222;
+                box-shadow: 0 15px 30px rgba(0,0,0,.06);
+                -webkit-filter: drop-shadow(0 15px 30px rgba(0,0,0,.06));
+                filter: drop-shadow(0 15px 30px rgba(0,0,0,.06));
+                color: #fff;
+
+                &::before{
+                    border-bottom-color: #222;
+                }
+                h5{
+                    &.heading{
+                        color: #fff
+                    }
+                }
+                p{
+                    &.bk_pra{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+
+        &.custom-color--2{
+            .dot-wrap{
+                .dot{
+                    background: #f55d4e;
+                }
+            }
+        }
+
+        &.custom-color--3{
+            .dot-wrap{
+                .dot{
+                    background: #9013fe;
+                }
+            }
+        }
+
+        &.custom-color--4{
+            .dot-wrap{
+                .dot{
+                    background: #7ed321;
+                }
+            }
+        }
+
+
+        &.custom-color--5{
+            .dot-wrap{
+                .dot{
+                    background: #D0021B !important;
+                }
+            }
+        }
+
+        &.custom-color--6{
+            .dot-wrap{
+                .dot{
+                    background: #F5A623 !important;
+                }
+            }
+        }
+
+        &.custom-color--7{
+            .dot-wrap{
+                .dot{
+                    background: #7ed321 !important;
+                }
+            }
+        }
+
+
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

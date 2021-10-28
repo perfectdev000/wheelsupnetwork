@@ -1,0 +1,103 @@
+/* =========================
+    Message Box Area 
+============================*/
+
+
+
+
+
+
+
+.message-box{
+    position: relative;
+    padding: 37px 30px 37px 70px;
+    .icon{
+        position: absolute;
+        top: 40px;
+        left: 41px;
+        font-size: 16px;
+        line-height: 1;
+        i{
+
+        }
+    }
+    .content{
+        font-weight: 500;
+        line-height: 1.58;
+        font-size: 14px;
+        font-family: $body-font;
+    }
+
+    &.bg_cat--1 {
+        background: #eee;
+        .icon{
+            color: #222;
+            i{
+    
+            }
+        }
+        .content{
+    
+        }
+    }
+
+    &.bg_cat--2 {
+        background: #f9e2e5;
+        .icon{
+            color: #d0021b;
+        }
+        .content{
+            color: #d0021b;
+        }
+    }
+
+    &.bg_cat--3 {
+        background: #edf9e1;
+        .icon{
+            color: #6ca928;
+        }
+        .content{
+            color: #6ca928;
+        }
+    }
+
+    &.bg_cat--4 {
+        background: $theme-color;
+        .icon{
+            color: #ffffff;
+        }
+        .content{
+            color: #ffffff;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

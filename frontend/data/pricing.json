@@ -1,0 +1,62 @@
+{
+    "pricingItems": [
+        {
+            "currency": "$",
+            "price": "45",
+            "mark": false,
+            "active": false,
+            "package": "Basic package",
+            "headings": [
+                "Business Architecture", 
+                "Cognitive Architecture", 
+                "Interior Architecture",
+                "Landscape Architecture",
+                "UI/UX designs",
+                "SEO marketing"
+            ]
+        },
+        {
+            "currency": "$",
+            "price": "60",
+            "package": "Standard package",
+            "mark": true,
+            "active": true,
+            "headings": [
+                "Business Architecture", 
+                "Cognitive Architecture", 
+                "Interior Architecture",
+                "Landscape Architecture",
+                "UI/UX designs",
+                "SEO marketing"
+            ]
+        },
+        {
+            "currency": "$",
+            "price": "99",
+            "mark": false,
+            "active": false,
+            "package": "Premium package",
+            "headings": [
+                "Business Architecture", 
+                "Cognitive Architecture", 
+                "Interior Architecture",
+                "Landscape Architecture",
+                "UI/UX designs",
+                "SEO marketing"
+            ]
+        }
+    ],
+    "pricingPlanHeading": "Choose your plan",
+    "pricingPlanText": "If you are unsure which pricing plan to choose, then register for a 14-day free trial to start building your business.",
+    "pricingAboutTitle": "About",
+    "pricingAboutText": "We offer competitive rates and amazing pricing plans to help you find one that fits your needs and budget. If you are unsure which pricing plan to choose, don’t worry, you can always get a refund from us.",
+    "pricingFeaturesTitle": "Features",
+    "pricingFeatures": [
+        "Business Architecture",
+        "Cognitive Architecture",
+        "Interior Architecture",
+        "Landscape Architecture",
+        "UI/UX designs",
+        "SEO marketing"
+    ] 
+}

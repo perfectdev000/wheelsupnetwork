@@ -1,0 +1,54 @@
+/*=========================
+ * Banner
+===========================*/
+.single-banner{
+    position: relative;
+    overflow: hidden;
+    .banner-image{
+        a{
+            img{
+                border-radius: inherit;
+                width: 100%;
+                -webkit-transition: all 1.5s cubic-bezier(0,0,.2,1);
+                transition: all 1.5s cubic-bezier(0,0,.2,1);
+            }
+        }
+    }
+    &:hover{
+        .banner-image{
+            a{
+                img{
+                    -webkit-transform: scale3d(1.1,1.1,1.1);
+                    transform: scale3d(1.1,1.1,1.1);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "old_customer_id": {
+      "type": "biginteger"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published"
+      ]
+    },
+    "published_date": {
+      "type": "datetime"
+    },
+    "expiration_date": {
+      "type": "datetime"
+    },
+    "sites": {
+      "via": "customers",
+      "collection": "site",
+      "dominant": true
+    },
+    "promotions": {
+      "private": true,
+      "via": "customer",
+      "collection": "promotions"
+    },
+    "partner_programs": {
+      "private": true,
+      "via": "customer",
+      "collection": "partner-programs"
+    },
+    "webinars": {
+      "private": true,
+      "via": "customer",
+      "collection": "webinars"
+    },
+    "events": {
+      "private": true,
+      "via": "customer",
+      "collection": "events"
+    },
+    "specials": {
+      "private": true,
+      "via": "customer",
+      "collection": "specials"
+    },
+    "industries": {
+      "private": true,
+      "via": "customer",
+      "collection": "industry"
+    },
+    "news": {
+      "private": true,
+      "via": "customer",
+      "collection": "news-item"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "fams": {
+      "private": true,
+      "via": "customer",
+      "collection": "fams"
+    },
+    "evergreens": {
+      "private": true,
+      "via": "customer",
+      "collection": "evergreen"
+    },
+    "contests": {
+      "private": true,
+      "via": "customer",
+      "collection": "contests"
+    },
+    "display_title": {
+      "type": "string"
+    },
+    "vip": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,160 @@
+/* ==========================
+    Popup Style 
+=============================*/
+.brook-search-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    z-index: 99999;
+    .search-overlay {
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0,.9);
+    }
+
+    & .inner{
+        background: #000000;
+        position: relative;
+        width: 400px;
+        max-width: 80%;
+        height: 100%;
+        text-align: left;
+        transition: all .3s;
+        overflow-y: auto;
+        padding-top: 85px;
+        transform: translateX(-100%);
+        cursor: default;
+
+        & .search-header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            padding: 0 15px 0 30px;
+            height: 85px;
+            align-items: center;
+            background: #fff;
+            .logo{
+                flex-grow: 1;
+                a{
+                    img{
+                        width: 115px;
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+            }
+            a{
+                &.search-close{
+                    position: relative;
+                    cursor: pointer;
+                    height: 40px;
+                    width: 40px;
+                    flex-shrink: 0;
+                    &::before,
+                    &::after{
+                        position: absolute;
+                        top: 19px;
+                        left: 8px;
+                        content: "";
+                        width: 24px;
+                        height: 3px;
+                        background: #222;
+                        transform-origin: 50% 50%;
+                        transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    }
+                    &::before{
+                        transform: rotate(-45deg);
+                    }
+                    &::after{
+                        transform: rotate(45deg);
+                    }
+
+                    &:hover{
+                        &::before,
+                        &::after{
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }
+        & .search-content{
+            padding: 30px 40px;
+            form{
+                position: relative;
+                label{
+                    color: #fff;
+                    width: 100%;
+                    input{
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 1px solid hsla(0,0%,100%,.15);
+                        padding: 15px 30px 15px 0;
+                        color: inherit;
+                        transition: all .3s cubic-bezier(.645,.045,.355,1);
+                       color: #fff;
+                       width: 100%;
+                       height: 62px;
+
+                        &[placeholder]:focus::-webkit-input-placeholder {
+                            transition: opacity 0.3s 0.3s ease; 
+                            opacity: 0;
+                        }
+                    }
+                }
+                button{
+                    &.search-submit{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background: transparent;
+                        border: 0;
+                        padding: 0;
+                        height: 62px;
+                        line-height: 62px;
+                        color: #fff;
+                        transform: none;
+                        box-shadow: none;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.search-popup-open {
+    &.brook-search-popup {
+        visibility: visible;
+        opacity: 1;
+        .inner {
+            transform: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

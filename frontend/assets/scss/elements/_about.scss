@@ -1,0 +1,167 @@
+/*==========================
+    About Area 
+===========================*/
+
+
+.brook-about-area{
+    &.bg-shape{
+        background-repeat: no-repeat;
+        background-position: bottom 20px left 128px;
+    }
+}
+
+.about--creative{
+    .content{
+        .title--creative{
+            h3{
+                &.heading{
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    line-height: 1.43;
+                    margin-bottom: 0;
+                    word-wrap: break-word;
+                    font-family: 'Montserrat', sans-serif; 
+                    margin-bottom: 34px;
+                }
+            }
+            h2{
+                font-size: 48px;
+                line-height: 1.21;
+                color: #fff;
+                margin-bottom: 47px;
+                max-width: 470px;
+                font-family: 'Montserrat', sans-serif;
+                
+                @media #{$md-layout} {
+                    font-size: 35px;
+                    margin-bottom: 17px;
+
+                }
+
+                @media #{$sm-layout} {
+                    font-size: 30px;
+                    margin-bottom: 17px;
+                }
+                span {
+                    font-family: 'Playfair Display', serif;
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.67;
+            color: #ffffff;
+            margin-bottom: 45px;
+            word-wrap: break-word;
+            max-width: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+        a{
+            &.about-btn{
+                background-color: transparent;
+                font-weight: 600;
+                font-size: 14px;
+                color: #fff;
+                font-family: $body-font;
+                white-space: nowrap;
+                line-height: 1.2;
+                i {
+                    padding-left: 20px;
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    font-size: 12px;
+                }
+                &:hover{
+                    i {
+                        transform: translate(5px,-0);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.about-accordion{
+    .thumb{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.brook-icon-boxes-area{
+    .poss_relative{
+        z-index: 2;
+    }
+}
+
+.about-coronavirus-content{
+
+    // Responsive
+    @media #{$md-layout}{
+        margin-bottom: 30px;
+    }
+    @media #{$sm-layout}{
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: 50px;
+        line-height: 65px;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 30px;
+        // Responsive
+        @media #{$laptop-device, $lg-layout, $md-layout}{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @media #{$sm-layout}{
+            font-size: 26px;
+            line-height: 34px;
+        }
+    }
+    .sub-title{
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 300;
+        color: $white;
+        font-family: $roboto;
+        margin-bottom: 30px;
+        // Responsive
+        @media #{$laptop-device, $lg-layout, $md-layout}{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @media #{$sm-layout}{
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+    }
+    .pragraph{
+        color: $white;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $roboto;
+        line-height: 34px;
+        margin-bottom: 30px;
+        // Responsive
+        @media #{$laptop-device, $lg-layout, $md-layout}{
+            font-size: 16px;
+            line-height: 28px;
+        }
+        @media #{$sm-layout}{
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+

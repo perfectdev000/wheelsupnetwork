@@ -1,0 +1,61 @@
+/*================
+Tabs Area 
+==================*/
+
+.card-header {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0;
+    .card-header-pills {
+        margin: 0 0 25px;
+    }
+}
+
+.card-body {
+    padding: 0;
+}
+
+.tabs {
+    border: 2px solid #fafafa;
+    padding: 30px;
+}
+
+.nav-pills .nav-link {
+    color: $heading-color;
+}
+
+.tab-content>.tab-pane {
+    font-size: 14px;
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+    color: $white;
+    background-color: $theme-color;
+}
+
+.tabs {
+    &.vertical{
+        .card-header {
+            flex-basis: 200px;
+            @media #{$sm-layout} {
+                flex-basis: 100%;
+            }
+            .card-header-pills {
+                margin: 0;
+                @media (min-width: 768px){
+                    flex-direction: column;
+                }
+            }
+        }
+        .tab-content{
+            flex-basis: calc(100% - 200px);
+            padding: 0 30px;
+
+            @media #{$sm-layout} {
+                flex-basis: 100%;
+                padding: 20px 0 10px;
+            }
+        }
+    }
+}

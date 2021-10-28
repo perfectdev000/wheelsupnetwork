@@ -1,0 +1,124 @@
+/* =======================
+    Instagram Area 
+==========================*/
+
+/* Instagram Style 01 */
+.instagram-grid-wrap {
+    display: grid;
+    grid-template-columns: repeat( 3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    &.instagram-grid-5 {
+        grid-template-columns: repeat( 6,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+
+        @media #{$md-layout} {
+            grid-template-columns: repeat( 3,1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        @media #{$sm-layout} {
+            grid-template-columns: repeat( 2,1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+    }
+    .item-grid{
+        &.grid-style--1 {
+            position: relative;
+            overflow: hidden;
+            .thumb {
+                a {
+                    img {
+                        border-radius: inherit;
+                        width: 100%;
+                        transition: all 1.5s cubic-bezier(0,0,.2,1);
+                    }
+                }
+            }
+
+            .item-info {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+                background: rgba(0,0,0,.5);
+                opacity: 0;
+                cursor: pointer;
+                border-radius: inherit;
+                transition: all .3s cubic-bezier(.645,.045,.355,1);
+                .inner {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    color: #fff;
+                    text-align: center;
+                    transform: translateY(-50%);
+                    margin: 0;
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    a {
+                        position: relative;
+                        color: #fff;
+                        font-size: 13px;
+                        display: inline-block;
+                        margin-right: 5px;
+                        border: none;
+                        padding: 0;
+                        i {
+                            padding-right: 3px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .thumb {
+                    a {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .item-info {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

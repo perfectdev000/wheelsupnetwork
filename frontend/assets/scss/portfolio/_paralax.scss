@@ -1,0 +1,81 @@
+/* =========================
+    Paralax Area 
+============================*/
+
+
+.paralax-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat( 3,1fr);
+}
+
+.paralax-portfolio{
+    position: relative;
+    height: 390px;
+    width: 390px;
+    transform-style: preserve-3d;
+    z-index: 2;
+    
+    @media #{$md-layout} {
+        width: auto;
+    }
+
+    @media #{$sm-layout} {
+        width: auto;
+    }
+
+    .portfolio-bg{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        
+        &.bg--1{
+            background: url('img/portfolio/grid/paralax-1.jpg');
+        }
+
+        &.bg--2{
+            background: url('img/portfolio/grid/paralax-2.jpg');
+        }
+        &.bg--3{
+            background: url('img/portfolio/grid/paralax-3.jpg');
+        }
+        &.bg--4{
+            background: url('img/portfolio/grid/paralax-4.jpg');
+        }
+        &.bg--5{
+            background: url('img/portfolio/grid/paralax-5.jpg');
+        }
+        &.bg--6{
+            background: url('img/portfolio/grid/paralax-6.jpg');
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+/* =========================
+breadcrumb Area 
+=============================*/
+.breadcrumb-area{
+
+    // breadcrumb Style One
+    &.breadcrumb-title-bar{
+        .breadcrumb-inner{
+            .heading{
+                font-weight: 600;
+                line-height: 1.41;
+                font-size: 32px;
+                font-family: $body-font;
+                &.heading-h1{
+                    font-weight: 600;
+                    font-size: 56px;
+                    // res
+                    @media #{$md-layout, $sm-layout} {
+                        font-size: 40px;
+                    }
+
+                    @media #{$large-mobile} {
+                        font-size: 30px;
+                    }
+                }
+
+            }
+            .breadcrumb-insite{
+                .core-breadcrumb{
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 29px;
+                    li{
+                        display: inline-block;
+                        position: relative;
+                        a{
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 1.58;
+                            position: relative;
+                            overflow: hidden;
+                            z-index: 1;
+                            transition: all .3s cubic-bezier(.645,.045,.355,1);
+                            font-family: $body-font;
+                            &::after{
+                                content: "";
+                                width: 0;
+                                height: 1px;
+                                bottom: 0;
+                                position: absolute;
+                                left: auto;
+                                right: 0;
+                                z-index: -1;
+                                transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                                background: currentColor;
+                            }
+                            &:hover{
+                                &::after{
+                                    width: 100%;
+                                    left: 0;
+                                    right: auto;
+                                }
+                            }
+                        }
+                        
+                        & + li{
+                            position: relative;
+                            padding-left: 22px;
+                            &::before{
+                                content: "\f105";
+                                font-size: 12px;
+                                position: absolute;
+                                left: 6px;
+                                top: 50%;
+                                margin-top: 2px;
+                                transform: translateY(-50%);
+                                font-family: "Font Awesome 5 Free";
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // breadcrumb Title White
+    &.breadcrumb-title-white{
+        .breadcrumb-inner{
+            .heading{
+                color: $white;
+            }
+            .breadcrumb-insite{
+                .core-breadcrumb{
+                    background-color: transparent;
+                    display: block;
+                    li{
+                        color: $white;
+                        &::before{
+                            color: $white;
+                        }
+                        a{
+                            color: $white;
+                            &::after{
+                                background-color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

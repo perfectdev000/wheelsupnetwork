@@ -1,0 +1,228 @@
+/* Responsive Css */
+
+
+@media #{$extra-device}{
+
+    .creative-portfolio .tp-caption .playfair-font {
+        font-size: 50px;
+    }
+}
+
+@media #{$laptop-device}{
+
+    .creative-portfolio .tp-caption .playfair-font {
+        font-size: 38px;
+        max-width: 550px;
+    }
+    .minimal-gallery.masonry-wrap .masonary-item {
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+    .minimal-gallery.masonry-wrap {
+        margin: 0 -20px;
+    }
+
+
+
+}
+
+@media #{$lg-layout}{
+    .creative-portfolio .tp-caption .playfair-font {
+        font-size: 36px;
+        max-width: 550px;
+        left: -20px;
+        position: relative;
+    }
+    
+    .revolution-slider-area .inner h1.heading {
+        font-size: 89px;
+    }
+    .one-page-header .header-wrapper .header-left-wrapper{
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+    .presentation-slider-wrapper .presentation-inner .inner.skill-area{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .single-product-details-side {
+        margin-left: 16px;
+    }
+
+    
+}
+
+
+@media #{$md-layout}{
+    .revolution-slider-area .inner h1.heading {
+        font-size: 70px !important;
+    }
+
+    .one-page-header .header-wrapper .header-left-wrapper{
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner .post-character{
+        font-size: 220px;
+    }
+    .blog-style--1 .blog-content .content h3.the-title {
+        font-size: 20px;
+    }
+    .blog-grid.blog-standard .post-content {
+        padding: 29px 12px 30px;
+    }
+    
+    
+}
+
+@media #{$sm-layout}{
+    .slick-dot-vertical-center .slick-dots {
+        right: 10px;
+    }
+    .authenthic-service h1 br{
+        display: none;
+    }
+    .revolution-slider-area .inner h1.heading {
+        font-size: 70px !important;
+    }
+    .clint-succeed h3.heading-h3.font-32 {
+        font-size: 20px;
+        line-height: 1.88;
+        margin-top: 20px;
+    }
+    .tp-caption.startups-pra ,
+    .tp-caption.creative-agency-pra{
+        padding: 0 29px !important;
+        width: auto !important;
+    }
+
+    .tp-caption.homer-service-heading{
+        padding: 0 84px !important;
+        width: 100% !important;
+        top: 9px;
+    }
+    .tp-caption.homer-service-pra{
+        padding: 0 84px !important;
+        width: 100% !important;
+        top: 35px;
+    }
+    .tp-caption.creative-agency-heading{
+        font-size: 38px !important;
+        padding: 0 30px !important;
+    }
+
+    .tp-caption.product-landing-pra{
+        font-size: 14px !important;
+        padding: 0 30px !important;
+    }
+    .architecture-service p.bk_pra{
+        color: #ffffff;
+    }
+    .tp-caption.design-studio-pra{
+        font-size: 14px !important;
+        padding: 0 30px !important;
+        position: relative;
+        top: 15px;
+    }
+    .tp-caption.architecture-pra {
+        font-size: 14px !important;
+        padding: 0 30px !important;
+        position: relative;
+        left: -36px !important;
+        padding-right: 51px !important;
+        top: -77px;
+    }
+
+    .tp-caption.architecture-btn {
+        position: relative;
+        top: -50px !important;
+    }
+
+    .single-vertical-slide .slide-inner .info h2.heading{
+        font-size: 36px;
+    }
+    .revolution-slider-area .inner h1.heading br ,
+    h3.heading-h3 br,
+    .single-vertical-slide .slide-inner .info h2.heading br {
+        display: none;
+    }
+    h6.heading-h6.font-16 {
+        font-size: 14px;
+    }
+    .brand-default.brand-style--2 .brand{
+        min-height: 144px;
+    }
+    .section-title--between .title h3 ,
+    .title--creative h2{
+        font-size: 29px;
+    }
+    .call-to-action.callto-action--1 .content h3{
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+    .portfolio.portfolio_style--2 .port-overlay-info .content{
+        padding: 37px 20px;
+    }
+    .portfolio.portfolio_style--2 .port-overlay-info .content h3.port-title{
+        font-size: 18px;
+    }
+
+    .one-page-header .header-wrapper .header-left-wrapper{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .shop-sidebar-container .shop-sidebar-wrapper{
+        padding: 50px 10px 66px;
+    }
+    .number-wrap span{
+        font-size: 41px;
+    }
+    .testimonial--horizontal--active{
+        padding-right: 30px;
+    }
+    .number-speaks .content h2{
+        font-size: 37px;
+    }
+    .blog-style--1 .blog-content.blog-position--bottom {
+        padding: 30px 18px 10px;
+    }
+
+    .blog-style--1 .blog-content .content h3.the-title {
+        font-size: 16px;
+        margin: 0 0 13px;
+    }
+    .blog-style--1 .blog-content .content ul.meta {
+        margin-bottom: 14px;
+    }
+    .blog-style--1 .blog-content .content .video-btn {
+        margin-bottom: 22px;
+    }
+    .single-motive-speach .content p {
+        padding-right: 0;
+    }
+    .authenthic-service h1.heading-h1 {
+        font-size: 24px !important;
+    }
+    
+
+
+}
+
+@media #{$large-mobile}{
+    .copyright.copyright--2 .copyright-right{
+        width: 244px;
+    }
+    .testimonial--horizontal--active .swiper-pagination.swiper-pagination-custom {
+        width: 245px;
+    }
+    .porfolio-swip-horizontal .swiper-slide .thumb img {
+        height: 404px;
+    }
+
+
+}
+
+@media #{$small-mobile}{
+
+}
+

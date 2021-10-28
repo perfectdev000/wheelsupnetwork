@@ -1,0 +1,21 @@
+{
+    "name": "wheelsupnetwork",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "develop:backend": "yarn --cwd backend develop",
+        "develop:frontend": "wait-on http://localhost:1337/dashboard && yarn --cwd frontend dev:wheels",
+        "develop": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*",
+        "start:backend": "yarn --cwd backend start",
+        "start:front:wheels": "yarn --cwd frontend start:wheels",
+        "start:front:agents": "yarn --cwd frontend start:agents",
+        "start:front:soloagentesmx": "yarn --cwd frontend start:soloagentesmx",
+        "start:front:soloagentescom": "yarn --cwd frontend start:soloagentescom",
+        "start:front:soloagentesco": "yarn --cwd frontend start:soloagentesco"
+    },
+    "devDependencies": {
+        "npm-run-all": "4.1.5",
+        "wait-on": "5.2.1",
+        "cross-env": "7.0.3"
+    }
+}

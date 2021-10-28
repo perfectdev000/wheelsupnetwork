@@ -1,0 +1,75 @@
+// Photo Slide
+
+
+
+
+.single-photo-slider{
+    display: flex;
+    align-items: center;
+
+    @media #{$md-layout, $sm-layout} {
+        display: block;
+    }
+
+    .image-wrapper{
+        flex-shrink: 0;
+        width: 50%;
+
+        @media #{$md-layout, $sm-layout} {
+            width: 100%;
+            padding: 0px 52px;
+        }
+    }
+    .text-wrapper{
+        flex-shrink: 0;
+        width: 50%;
+        padding: 50px 100px;
+
+        @media #{$laptop-device} {
+            padding: 35px 52px;
+        }
+
+        @media #{$md-layout, $sm-layout} {
+            padding: 35px 52px;
+            width: 100%;
+        }
+
+        .text{
+            h1{
+                &.heading{
+                    font-size: 70px;
+                    letter-spacing: -3px;
+                    line-height: 1.22;
+                    font-weight: 400;
+                    max-width: 400px;
+                    margin-bottom: 0;
+                    
+                    @media #{$lg-layout} {
+                        max-width: 100%;
+                    }
+
+                    @media #{$md-layout} {
+                        max-width: 100%;
+                        font-size: 58px;
+                    }
+
+                    @media #{$sm-layout} {
+                        max-width: 100%;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

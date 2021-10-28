@@ -1,0 +1,197 @@
+/*==========================
+ Swiper Arrow Style 
+=============================*/
+
+// Swiper Transparent Position Center
+.ht-swiper-button {
+    font-size: 30px;
+    top: 50%;
+    left: -70px;
+    position: absolute;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    z-index: 2;
+
+    &:focus {
+        outline: none;
+    }
+
+    @media #{$lg-layout, $md-layout, $sm-layout} {
+        left: 0px;
+    }
+
+    &.ht-swiper-button-next {
+        left: auto;
+        right: -70px;
+
+        @media #{$lg-layout, $md-layout, $sm-layout} {
+            left: auto;
+            right: 0px;
+        }
+    }
+}
+
+.swiper-arrow-hover {
+    &:hover {
+        .ht-swiper-button {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.swiper-dots-bottom {
+    bottom: -30px;
+    position: relative;
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        cursor: pointer;
+        border: 0;
+        outline: none;
+        background-color: #d8d8d8;
+        border-radius: 100%;
+        opacity: 1;
+        margin-right: 10px;
+        transition: 0.4s;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &-active {
+            background-color: $theme-color;
+        }
+    }
+}
+
+.squre-dots{
+    position: absolute;
+    left: 50%;
+    z-index: 9999;
+    bottom: -60px;
+    li {
+        width: auto;
+        height: auto;
+        margin: 0 9px;
+        padding: 0;
+
+        button {
+            width: 22px;
+            height: 4px;
+            padding: 0;
+            cursor: pointer;
+            border: 0;
+            outline: none;
+            background: #d8d8d8;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.number-dot {
+    .swiper-pagination-bullets {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        // Responsive
+        @media #{$sm-layout}{
+            bottom: 20px;
+        }
+        .swiper-pagination-bullet {
+            background: none;
+            color: $white;
+            font-size: 20px;
+            line-height: 20px;
+            position: relative;
+            margin: 0 10px !important;
+            opacity: 1;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            &::before {
+                content: "";
+                bottom: -15px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $white;
+                z-index: 9;
+                opacity: 0;
+                position: absolute;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover,
+            &-active {
+                &::before{
+                    opacity: 1;
+                    visibility: visible;
+                    width: 100%;
+                }
+            }
+        }
+        &.minimal-agency {
+            bottom: -50px;
+            .swiper-pagination-bullet {
+                color: $black;
+                &::before {
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
+
+
+.swiper-dot-vertical-center{
+    position: relative;
+    .swiper-pagination {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 95px;
+        width: auto;
+        bottom: auto !important;
+
+        @media #{$md-layout, $sm-layout} {
+            right: 30px;
+        }
+        .swiper-pagination-bullet {
+            font-size: 0;
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            margin: 12px 0;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 100%;
+            opacity: 1;
+            &-active {
+                background-color: $white;
+            }
+        }
+    }
+    
+
+    &.button-gray {
+        .swiper-pagination-bullet {
+            background-color: #d8d8d8;
+            &-active {
+                background-color: #222222;
+            }
+        }
+    }
+}

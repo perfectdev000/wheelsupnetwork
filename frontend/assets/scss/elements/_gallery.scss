@@ -1,0 +1,187 @@
+/* ====================
+    Gallery Area 
+========================*/
+
+
+.gallery-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat( 3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px; 
+    
+    @media #{$sm-layout} {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    @media #{$md-layout} {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-width-2{
+        -ms-grid-column: span 2;
+        grid-column: span 2;
+
+        @media #{$sm-layout} {
+            -ms-grid-column: span 1;
+            grid-column: span 1;
+        }
+        
+        @media #{$md-layout} {
+            -ms-grid-column: span 1;
+            grid-column: span 1;
+        }
+    } 
+    .grid-height-2{
+        -ms-grid-row: span 2;
+        grid-row: span 2;
+
+        @media #{$sm-layout} {
+            -ms-grid-row: span 1;
+            grid-row: span 1;
+        }
+        
+        @media #{$md-layout} {
+            -ms-grid-row: span 1;
+            grid-row: span 1;
+        }
+        
+    }                                                                  
+}
+
+.musician-gallery-grid{
+    grid-template-columns: repeat( 3,1fr);
+    grid-column-gap: 90px;
+    grid-row-gap: 80px;
+    display: -ms-grid;
+    display: grid;
+
+    @media #{$lg-layout} {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    @media #{$md-layout} {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    
+    @media #{$sm-layout} {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .grid-width-2{
+        -ms-grid-column: span 2;
+        grid-column: span 2;
+    } 
+    .grid-height-2{
+        -ms-grid-row: span 2;
+        grid-row: span 2;
+    }                                                                  
+}
+
+
+
+
+
+
+
+// Gallery Style 01
+.gallery{
+    display: block;
+    position: relative !important;
+    width: 100%;
+    height: 100%;
+    .thumb{
+        img{
+            width: 100%;
+        }
+    }
+    .hover-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        background-color: $theme-color;
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        .inner{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            span{
+                font-size: 36px;
+                color: #fff;
+            }
+        }
+    }
+
+    &:hover{
+        .hover-overlay{
+            visibility: visible;
+            opacity: .9;
+        }
+    }
+}
+
+
+
+.masonary-item{
+    margin-top: 30px;
+}
+
+
+
+/*=========================
+    Minimal Gallery 
+==========================*/
+
+.minimal-gallery{
+    &.masonry-wrap{
+        margin: 0 -45px;
+
+        @media #{$lg-layout} {
+            margin: 0 -15px;
+        }
+
+        @media #{$md-layout} {
+            margin: 0 -15px;
+        }
+
+        @media #{$sm-layout} {
+            margin: 0 -15px;
+        }
+
+        .masonary-item{
+            padding: 0 45px;
+            margin-top: 90px;
+            display: block;
+
+            @media #{$lg-layout} {
+                padding: 0 15px;
+                margin-top: 30px;
+            }
+
+            @media #{$md-layout} {
+                padding: 0 15px;
+                margin-top: 30px;
+            }
+
+            @media #{$sm-layout} {
+                padding: 0 15px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,77 @@
+{
+    "item":[
+        {
+            "id": 1,
+            "logo": "/img/logo/clients/amresor.jpeg"
+        },
+        {
+            "id": 2,
+            "logo": "/img/logo/clients/palla.jpeg"
+        },
+        {
+            "id": 3,
+            "logo": "/img/logo/clients/casadecampo.png"
+        },
+        {
+            "id": 4,
+            "logo": "/img/logo/clients/hotels.jpeg"
+        },
+        {
+            "id": 5,
+            "logo": "/img/logo/clients/barcelo.jpeg"
+        }
+    ],
+    "itemTwo":[
+        {
+            "id": 1,
+            "logo": "/img/logo/clients/logo-magic.jpeg"
+        },
+        {
+            "id": 2,
+            "logo": "/img/logo/clients/spring_hoteles.jpeg"
+        },
+        {
+            "id": 3,
+            "logo": "/img/logo/clients/melia_logo.png"
+        },
+        {
+            "id": 4,
+            "logo": "/img/logo/clients/mp.jpeg"
+        },
+        {
+            "id": 5,
+            "logo": "/img/logo/clients/sandos.jpeg"
+        }
+    ],
+    "itemThree":[
+        {
+            "id": 1,
+            "logo": "/img/logo/clients/rcd.png"
+        },
+        {
+            "id": 2,
+            "logo": "/img/logo/clients/karisma.png"
+        },
+        {
+            "id": 3,
+            "logo": "/img/logo/clients/saman.jpeg"
+        },
+        {
+            "id": 4,
+            "logo": "/img/logo/clients/zafiro.jpeg"
+        },
+        {
+            "id": 5,
+            "logo": "/img/logo/clients/playasol.png"
+        },
+        {
+            "id": 6,
+            "logo": "/img/logo/clients/viva.jpeg"
+        }
+         
+       
+    ]
+}
+
+    
+ 

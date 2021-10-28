@@ -1,0 +1,72 @@
+/* =================
+    Typed Text 
+======================*/
+
+.cd-headline.clip span{
+    padding: 0;
+}
+.cd-headline.clip .cd-words-wrapper.brown-color::after{
+    background-color:$brown;
+    width: 4px;
+}
+
+.typed-text{
+    .content{
+        text-align: left;
+        h3 {
+            &.heading{
+                max-width: 900px;
+                line-height: 1.2;
+                font-size: 56px;
+                margin-bottom: 0;
+                word-wrap: break-word;
+                margin-top: -20px;
+                @media #{$md-layout} {
+                    margin-top: 19px;
+                    font-size: 43px;
+                }
+                @media #{$sm-layout} {
+                    margin-top: 19px;
+                    font-size: 30px;
+                }
+                span{
+                    &.text-variation-play{
+                        font-family: "Playfair Display", Georgia, serif;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 24px;
+            word-wrap: break-word;
+            max-width: 100%;
+            margin-top: 30px;
+
+            @media #{$sm-layout} {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

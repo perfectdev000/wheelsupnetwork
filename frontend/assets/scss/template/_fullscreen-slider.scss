@@ -1,0 +1,156 @@
+/* ========================
+    Fullscreen Slider 
+===========================*/
+
+.left-vertical-header{
+    margin-left: 300px;
+    
+    @media #{$lg-layout, $md-layout, $sm-layout} {
+        margin-left: 0;
+    }
+}
+
+
+.fullscreen-slider-activation {
+    .slide-portfolio-single {
+        padding: 30px 100px;
+        
+        @media #{$md-layout, $sm-layout} {
+            padding: 150px 30px;
+            height: 100vh;
+        }
+        .content{
+            max-width: 600px;
+            text-align: left;
+            // res
+            @media #{$lg-layout, $md-layout, $sm-layout}{
+                margin-top: 80px;
+            }
+            h5{
+                font-weight: 600;
+                margin-bottom: 30px;
+                font-family: $secondary-font;
+            }
+            h2{
+                margin-bottom: 52px;
+                a{
+                    color: #fff;
+                    font-size: 48px;
+                    line-height: 1.21;
+                    font-family: $secondary-font;
+                    @media #{$sm-layout} {
+                        font-size: 32px;
+                    }
+                }
+            }
+            .slide-btn{
+                a{
+                    color: #fff;
+                    background: transparent;
+                    border-color: #fff;
+                    font-family: $secondary-font;
+                    &:hover{
+                        background: #fff;
+                        color: #222;
+                    }
+                }
+            }
+        }
+        .resume-slider-content{
+            margin: auto;
+            h1{
+                font-weight: 400;
+                font-size: 110px;
+                line-height: 1.2;
+                //Responsive
+                @media #{$laptop-device}{
+                    font-size: 90px;
+                }
+                @media #{$lg-layout}{
+                    font-size: 80px;
+                }
+                @media #{$md-layout}{
+                    font-size: 70px;
+                }
+                @media #{$sm-layout}{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media #{$sm-layout}{
+    .revolution-slider-area .inner h1.heading {
+        font-size: 40px;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner.feature-info {
+        padding: 50px 39px 42px 54px;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner .post-character{
+        font-size: 220px;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper{
+        position: relative;
+        z-index: 2;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner.feature-info{
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner.feature-thumbnail{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner .post-character{
+        display: none;
+    }
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner.feature-thumbnail {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner.feature-thumbnail::before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #ffffff;
+        opacity: 0.4;
+        content: "";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

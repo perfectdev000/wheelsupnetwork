@@ -1,0 +1,191 @@
+/*==========================
+List Area 
+===========================*/
+
+
+.bk-list{
+    .list-header{
+        padding-left: 36px;
+        .marker{
+            display: inline-block;
+            float: left;
+            position: relative;
+            &::before{
+                content: "\f058";
+                position: absolute;
+                top: 0;
+                left: -36px;
+                display: block;
+                font-size: 18px;
+                color: #7ed321;
+                font-family: Font Awesome\ 5 Free;
+                font-weight: 900;
+            }
+        }
+        p{
+            &.bk_pra{
+                margin-top: 13px;
+                margin-bottom: 0;
+                font-weight: 500;
+                line-height: 1.58;
+                font-size: 14px; 
+            }
+        }
+    }
+}
+
+
+
+// List Style 2
+.bk-list--2{
+    .list-header{
+        padding-left: 14px;
+        margin-bottom: 20px;
+        .marker{
+            display: inline-block;
+            float: left;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: -14px;
+            }
+            &.with-dot{
+                &::before{
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: #999;
+                }
+            }
+        }
+        .title-wrap{
+            h6{
+                &.heading{
+                    color: inherit;
+                    font-weight: 500;
+                }
+            }
+        }
+        &.with-ckeck{
+            padding-left: 26px;
+            .marker{
+                &::before{
+                    content: "\f00c";
+                    display: block;
+                    font-size: 13px;
+                    font-family: Font Awesome\ 5 Free;
+                    font-weight: 900;
+                    color: $theme-color;
+                    top: -4px;
+                    left: -26px;
+                }
+                &.dark-color{
+                    &::before{
+                        color: $heading-color !important;
+                    }
+                }
+            }
+
+            &.item-available{
+                .marker{
+                    &::before{
+                        color: #7ed321;
+                    }
+                }
+            }
+            &.item-not-available{
+                .marker{
+                    &::before{
+                        color: $body-color;
+                    }
+                }
+            }
+
+            &.check-yellow-color-2{
+                .marker{
+                    &::before {
+                        color: $yellow-color-2;
+                    }
+                }
+            }
+        }
+        &.with-number{
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+            .marker{
+                position: absolute;
+                left: 0;
+                top: -3px
+            }
+            &--theme{
+                padding-left: 30px;
+                margin-bottom: 20px;
+                .marker{
+                    color: $theme-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+                h6{
+                    &.heading{
+                        font-size: 15px;
+                        line-height: 1.2;
+                        color: $heading-color;
+                    }
+                }
+            }
+            &--body{
+                padding-left: 30px;
+                margin-bottom: 3px;
+                .marker{
+                    color: $body-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: 0em;
+                    line-height: 1.38;
+                    font-family: $heading-font;
+                }
+                h6{
+                    &.heading{
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: 0em;
+                        line-height: 1.38;
+                        color: $body-color;
+                        font-family: $heading-font;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

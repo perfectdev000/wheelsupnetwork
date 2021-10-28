@@ -1,0 +1,86 @@
+/*========================
+    Demo Option 
+=========================*/
+
+.demo-option-container{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    height: 100%;
+    width: 350px;
+    max-width: calc(100% - 45px);
+    z-index: 100000;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+
+    &.open{
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        box-shadow: -3px 0 50px -2px rgba(0,0,0,.14);
+    }
+}
+
+
+// Demo Option Wrapper
+.demo-option-wrapper{
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 55px;
+    .demo-panel-header{
+        padding: 40px 30px 30px;
+        text-align: center;
+        .panel-btn{
+            margin-bottom: 30px;
+            a{
+                i{
+                    line-height: 0;
+                    font-size: 20px;
+                    margin-right: 10px;
+                    color: #fff;
+                }
+            }
+        }
+        .title{
+            .heading-h5{
+                margin: 0 0 18px;
+            }
+
+        }
+    }
+
+    .demo-quick-option-list{
+        padding: 27px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+
+        a{
+            position: relative;
+            display: inline-block;
+            &.link{
+                img{
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

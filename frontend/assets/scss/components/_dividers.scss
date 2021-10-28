@@ -1,0 +1,106 @@
+/* ========================
+Dividers Area 
+==========================*/
+
+.dividers-inner{
+    .space{
+        height: 90px;
+    }
+}
+
+.basic-separator{
+    display: inline-block;
+    height: 2px;
+    width: 120px;
+    background: #222;
+    &.line-3{
+        height: 3px;
+    }
+}
+
+
+
+
+
+.basic-thine-line{
+    border-bottom: 1px solid #ddd;
+}
+
+.basic-dark-line-1px{
+    border-bottom: 1px solid #333;
+}
+
+.basic-dark2-line-1px{
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+
+.basic-thick-line{
+    border-bottom: 2px solid #ddd;
+}
+
+.basic-dark-line{
+    border-bottom: 2px solid #222;
+}
+
+.basic-thick-line-theme-4{
+    border-top: 4px solid $theme-color;
+}
+
+.basic-dash-line{
+    border-bottom: 1px dashed #ddd;
+}
+
+
+.basic-short-line{
+    width: 120px;
+    background: #222;
+    height: 3px;
+    display: inline-block;
+}
+
+
+
+.basic-modern-dots{
+    display: inline-block;
+    padding: 3px 10px;
+    cursor: pointer;
+    .dot{
+        background-color: $theme-color;
+        border-radius: 50%;
+        box-shadow: 0 0 12px #def0ff;
+        -webkit-animation: separator-bounce 1.4s ease-in-out 0s infinite both;
+        animation: separator-bounce 1.4s ease-in-out 0s infinite both;
+        width: 14px;
+        height: 14px;
+        &.second-circle{
+            margin-top: 18px;
+            -webkit-animation-delay: -.16s;
+            animation-delay: -.16s;
+        }
+        &.third-circle{
+            margin-top: 14px;
+            -webkit-animation-delay: -.32s;
+            animation-delay: -.32s;
+        }
+    }
+    &.white-dots{
+        .dot{
+            background-color: #ffffff;
+            box-shadow: 0 0 12px #ffffff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

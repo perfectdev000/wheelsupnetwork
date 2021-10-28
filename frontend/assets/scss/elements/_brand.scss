@@ -1,0 +1,152 @@
+/* ======================
+    Brand Area
+==========================*/
+
+.brook-brand-area{
+    &.bg-shape{
+        background-repeat: no-repeat;
+        background-position: top 80px right;
+    }
+}
+
+
+// Brand Default
+.brand-default{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &.brand-style--3{
+        grid-template-columns: repeat( 3,1fr);
+        display: -ms-grid;
+        display: grid;
+
+    }
+    .brand{
+        text-align: center;
+        a{
+            img{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                opacity: .3;
+                -webkit-transition: all .3s linear;
+                transition: all .3s linear;
+                display: inline-block;
+            }
+            &:hover{
+                img{
+                    -webkit-filter: none;
+                    filter: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.brand-style--2{
+        grid-template-columns: repeat( 3,1fr);
+        display: -ms-grid;
+        display: grid;
+        @media #{$large-mobile} {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media #{$small-mobile} {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .brand{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            min-height: 200px;
+            &::after{
+                display: block;
+                position: absolute;
+                content: "";
+                left: -1px;
+                top: -1px;
+                right: 0;
+                bottom: 0;
+                border: 1px solid #eee;
+                pointer-events: none;
+            }
+        }
+        &.no-border{
+            .brand{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    &.brand-business{
+        grid-template-columns: repeat( 4,1fr) !important;
+        display: grid;
+        margin: 0 -25px;
+        @media #{$md-layout} {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+        @media #{$sm-layout} {
+            grid-template-columns: repeat(1, 1fr) !important;
+            margin: 0px;
+        }
+        .brand{
+            margin: 0 25px;
+            margin-bottom: 50px;
+            // Responsive
+            @media #{$lg-layout, $md-layout, $sm-layout}{
+                margin: 0 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+// Social Media Clint
+.social-clint{
+    grid-template-columns: repeat( 4,1fr);
+    display: grid;
+    
+    @media #{$sm-layout} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clint-grid{
+        .grid-inner{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            min-height: 115px;
+            height: 100%;
+            .inner{
+                a{
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    img{
+                        transition: all .3s linear;
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+                &:hover{
+                    a{
+                        img{
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.minimal-agency-brand-logo {
+    .brand {
+        &:after {
+            border: none !important;
+        }
+    }
+}

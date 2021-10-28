@@ -1,0 +1,155 @@
+/* ========================
+    One pge Contact 
+==========================*/
+
+.hero-onepage {
+    position: relative;
+    .hero-thumb {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .hero-content {
+        height: 950px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // res
+        @media #{$lg-layout, $md-layout, $sm-layout}{
+            height: 750px;
+        }
+
+        &__left {
+            position: relative;
+            .hero-title {
+                font-size: 120px;
+                font-weight: 700;
+                line-height: 1.1;
+                padding-top: 100px;
+                font-family: $body-font;
+                // res
+                @media #{$lg-layout}{
+                    font-size: 80px;
+                }
+                @media #{$md-layout}{
+                    font-size: 70px;
+                }
+                @media #{$sm-layout}{
+                    font-size: 50px;
+                }
+            }
+        }
+
+        &__right {
+            position: relative;
+            max-width: 470px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .right-top {
+                padding-top: 120px;
+                // res
+                @media #{$small-mobile}{
+                    padding-top: 0;
+                }
+                h2 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    font-family: $body-font;
+                }
+            }
+            .right-bottom {
+                padding-bottom: 80px;
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: $body-font;
+                }
+                h6 {
+                    color: #999;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 1.6;
+                    font-family: $body-font;
+                }
+            }
+        }
+    }
+}
+
+.onepage-contact-inner{
+    box-sizing: border-box;
+    display: flex;
+    // res
+    @media #{$sm-layout} {
+        display: block;
+    }
+    .page-address-inner{
+        padding-top: 80px !important;
+        padding-right: 70px !important;
+        padding-bottom: 67px !important;
+        padding-left: 70px !important;
+        width: 50%;
+        // res
+        @media #{$lg-layout, $md-layout, $sm-layout} {
+            padding-top: 81px !important;
+            padding-right: 34px !important;
+            padding-bottom: 53px !important;
+            padding-left: 55px !important;
+        }
+
+        @media #{$sm-layout} {
+            width: 100%;
+        }
+    }
+    .googlemap{
+        width: 50%;
+        @media #{$sm-layout} {
+            width: 100%;
+        }
+    }
+}
+
+// Landing Page
+.brook-professonal-design{
+    .thumbnail{
+        margin-left: -81px;
+    }
+}
+.brook-contagion-area{
+    .thumbnail{
+        margin-left: -130px;
+        // Responsive
+        @media #{$laptop-device, $lg-layout}{
+            margin-left: 0px;
+        }
+        @media #{$md-layout, $sm-layout}{
+            margin-left: 0px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

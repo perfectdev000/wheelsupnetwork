@@ -1,0 +1,305 @@
+
+/*============================
+    Accordion Area 
+==============================*/
+
+
+
+.bk-accordion{
+    .card{
+        border: 0 none;
+        margin-bottom: 30px;
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+    }
+    .card-header{
+        position: relative;
+        background: transparent;
+        padding: 0;
+        border: 0 none;
+
+        .acc-btn{
+            color: #111;
+            font-size: 18px;
+            line-height: 1.2;
+            padding: 0;
+            font-weight: 600;
+            border: 0 none;
+            font-family: $body-font;
+            -webkit-appearance: none;
+            display: block;
+            background: #f7f7f7;
+            padding: 20px 26px;
+            margin: -1px -1px 0;
+            border: 0 none;
+            position: relative;
+            text-align: left;
+            border-radius: 5px 5px 0 0;
+
+            &::before{
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-family: Font Awesome\ 5 Free;
+                font-weight: 900;
+                content: "\f107";
+                right: 16px;
+                font-size: 16px;
+            }
+
+            &[aria-expanded="true"]{
+                background: $theme-color;
+                color: #ffffff;
+                &::before{
+                    content: "\f104";
+                }
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            
+        }
+    }
+    .card-body{
+        padding: 27px 25px 39px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        line-height: 1.58;
+        font-size: 14px;
+        font-family: $body-font;
+        border: 0 none;
+        box-shadow: 0 20px 40px rgba(0,0,0,.07);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+/* Accordion Style 02 */
+
+.bk-accordion-style--2{
+    .card{
+        border: 0 none;
+        margin-bottom: 7px;
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+    }
+    .card-header{
+        position: relative;
+        background: transparent;
+        padding: 0;
+        border: 0 none;
+
+        .acc-btn{
+            color: #111;
+            padding: 0;
+            font-weight: 600;
+            border: 0 none;
+            text-align: left;
+            font-family: $body-font;
+            -webkit-appearance: none;
+            display: block;
+            position: relative;
+            font-size: 18px;
+            line-height: 1.2;
+            padding: 14px 0 14px 26px;
+
+            &.black-bg{
+                &::before{
+                    color: $white;
+                }
+            }
+
+            &::before{
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-family: Font Awesome\ 5 Free;
+                font-weight: 900;
+                content: "+";
+                left: 0;
+                font-size: 18px;
+                color: #222222;
+                font-weight: 700;
+            }
+            &[aria-expanded="true"]{
+                background: transparent;
+                color: $theme-color;
+                &::before{
+                    content: "-";
+                    color: $theme-color;
+                }
+            } 
+            &.btn-secondary {
+                background-color: transparent;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .card-body{
+        padding: 5px 0 21px 26px;
+        font-weight: 500;
+        line-height: 1.58;
+        font-size: 14px;
+        font-family: $body-font;
+        border: 0 none;
+        box-shadow: inherit;
+        border-radius: inherit
+    }
+    &.color-white{
+        .card-header{
+            h5{
+                background: #121618;
+                a{
+                    &.acc-btn{
+                        color: $white;
+                        &::before{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .card-body{
+            background: #121618;
+            color: $white;
+        }
+    }
+    &.border-style{
+        .card{
+            border-top: 1px solid #9C9C9C;
+            border-bottom: 1px solid #9C9C9C;
+            border-radius: 0;
+            margin-bottom: 45px;
+        }
+        .card-header{
+    
+            h5{
+                a{
+                    &.acc-btn{
+                        font-size: 24px;
+                        line-height: 1.2;
+                        font-weight: 600;
+                        font-family: $secondary-font;
+                        padding: 14px 0 14px 26px;
+                        // Responsive
+                        @media #{$lg-layout}{
+                            font-size: 18px;
+                        }
+                        @media #{$md-layout}{
+                            font-size: 18px;
+                        }
+                        @media #{$sm-layout}{
+                            font-size: 18px;
+                        }
+                        
+                        &::before{
+                            font-size: 24px;
+                            // Responsive
+                            @media #{$lg-layout}{
+                                font-size: 18px;
+                            }
+                            @media #{$md-layout}{
+                                font-size: 18px;
+                            }
+                            @media #{$sm-layout}{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card-body{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            font-family: $roboto;
+            // Responsive
+            @media #{$lg-layout}{
+                font-size: 16px;
+                line-height: 28px;
+            }
+            @media #{$md-layout}{
+                font-size: 16px;
+                line-height: 28px;
+            }
+            @media #{$sm-layout}{
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.faq-content{
+    // Responsive
+    @media #{$md-layout}{
+        margin-bottom: 50px;
+    }
+    @media #{$sm-layout}{
+        margin-bottom: 50px;
+    }
+    h2{
+        font-size: 50px;
+        line-height: 65px;
+        font-weight: 600;
+        color: $theme-color;
+        margin-bottom: 30px;
+        // Responsive
+        @media #{$lg-layout}{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @media #{$md-layout}{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @media #{$sm-layout}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    p{
+      font-size: 18px;
+      line-height: 34px;
+      font-weight: 400;
+      font-family: $roboto; 
+      max-width: 460px; 
+      // Responsive
+      @media #{$lg-layout}{
+        font-size: 16px;
+        line-height: 28px;
+        }
+      @media #{$md-layout}{
+        font-size: 16px;
+        line-height: 28px;
+        }
+      @media #{$sm-layout}{
+        font-size: 14px;
+        line-height: 22px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

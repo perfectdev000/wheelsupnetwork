@@ -1,0 +1,16 @@
+/* .fade-enter-active, */
+/* .fade-leave-active { */
+  /* transition: opacity 0.5s; */
+/* } */
+/* .fade-enter, */
+/* .fade-leave-active { */
+  /* opacity: 0; */
+/* } */
+/* Transitions using the fade hook */
+fade-enter-active, .fade-leave-active {
+  transition: all .30s ease-out;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}

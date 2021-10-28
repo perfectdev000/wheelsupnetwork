@@ -1,0 +1,67 @@
+{
+  "categories": [],
+  "sites": [
+    {
+      "name": "Wheels Up Network",
+      "uid": "wheels-up-network",
+      "url": "",
+      "defaultSeo": {
+        "metaTitle": "WheelsUpNetwork | Where the travel industry earns, learns, & saves",
+        "metaDescription": "WheelsUpNetwork is a one-stop shop for all there is to know about the travel industry. You can find the most up-to-date travel agent incentives, FAM trips, sales tools & resources, webinars, travel agent rates and more.",
+        "shareImage": []
+      },
+      "favicon": []
+    },
+    {
+      "name": "Agents Connect",
+      "uid": "agents-connect",
+      "url": "",
+      "defaultSeo": {
+        "metaTitle": "Agents Connect | Where the travel industry earns, learns, & saves",
+        "metaDescription": "Agents Connect is a one-stop shop for all there is to know about the travel industry. You can find the most up-to-date travel agent incentives, FAM trips, sales tools & resources, webinars, travel agent rates and more.",
+        "shareImage": []
+      },
+      "favicon": []
+    },
+    {
+      "name": "SoloParaAgentes M\u00e9xico",
+      "uid": "solo-para-agentes-mx",
+      "url": "",
+      "defaultSeo": {
+        "metaTitle": "Solo Para Agentes | M\u00e9xico",
+        "metaDescription": "",
+        "shareImage": []
+      },
+      "favicon": []
+    },
+    {
+      "name": "SoloParaAgentes Espa\u00f1a",
+      "uid": "solo-para-agentes-com",
+      "url": "",
+      "defaultSeo": {
+        "metaTitle": "Solo Para Agentes | Espa\u00f1a",
+        "metaDescription": "",
+        "shareImage": []
+      },
+      "favicon": []
+    },
+    {
+      "name": "SoloParaAgentes Colombia",
+      "uid": "solo-para-agentes-co",
+      "url": "",
+      "defaultSeo": {
+        "metaTitle": "Solo Para Agentes | Colombia",
+        "metaDescription": "",
+        "shareImage": []
+      },
+      "favicon": []
+    }
+  ],
+  "authors": [
+    {
+      "name": "Admin Editor",
+      "email": "admin@editor.com",
+      "picture": []
+    }
+  ]
+}

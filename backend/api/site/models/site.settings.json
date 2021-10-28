@@ -1,0 +1,131 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "name": "Site",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "favicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "banner": {
+      "via": "site",
+      "model": "banners"
+    },
+    "jobs": {
+      "private": true,
+      "via": "sites",
+      "collection": "job"
+    },
+    "customers": {
+      "via": "sites",
+      "private": true,
+      "collection": "customer"
+    },
+    "destinations": {
+      "via": "sites",
+      "private": true,
+      "collection": "destination"
+    },
+    "news_items": {
+      "private": true,
+      "via": "sites",
+      "collection": "news-item"
+    },
+    "webinars": {
+      "private": true,
+      "via": "sites",
+      "collection": "webinars"
+    },
+    "specials": {
+      "private": true,
+      "via": "sites",
+      "collection": "specials"
+    },
+    "promotions": {
+      "private": true,
+      "via": "sites",
+      "collection": "promotions"
+    },
+    "partner_programs": {
+      "private": true,
+      "via": "sites",
+      "collection": "partner-programs"
+    },
+    "industries": {
+      "private": true,
+      "via": "sites",
+      "collection": "industry"
+    },
+    "events": {
+      "private": true,
+      "via": "sites",
+      "collection": "events"
+    },
+    "banners_publicity": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "banner_publishing_path": {
+      "type": "string",
+      "unique": false
+    },
+    "fams": {
+      "private": true,
+      "via": "sites",
+      "collection": "fams"
+    },
+    "evergreens": {
+      "private": true,
+      "via": "sites",
+      "collection": "evergreen"
+    },
+    "contests": {
+      "via": "sites",
+      "private": true,
+      "collection": "contests"
+    },
+    "banner_ads": {
+      "via": "sites",
+      "collection": "banner-ads"
+    }
+  }
+}

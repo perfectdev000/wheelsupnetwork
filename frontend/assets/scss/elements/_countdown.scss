@@ -1,0 +1,221 @@
+/*==============================
+Countdown Area 
+====================================*/
+
+
+.countdown-style-1 {
+    .timer-grid {
+        >div {
+            display: flex;
+            margin: 0 -15px;
+
+            @media #{$large-mobile} {
+                flex-wrap: wrap;
+            }
+
+            span {
+                &.ht-count {
+                    margin: 0 15px;
+                    text-align: center;
+                    @media #{$large-mobile} {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            span {
+                &.time-count {
+                    display: inline-block;
+                    padding: 31px 10px;
+                    font-size: 36px;
+                    width: 70px;
+                    text-align: center;
+                    margin-bottom: 18px;
+                    border-radius: 6px;
+                    font-weight: 600;
+                }
+            }
+
+            span {
+                &.count-inner {
+                    p {
+                        margin: 0;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &.bg-solid-grey {
+        .timer-grid {
+            >div {
+                span {
+                    &.time-count {
+                        background: #f3f3f3;
+                        color: #222;
+                    }
+                }
+            }
+        }
+    }
+
+    &.bg-solid-theme {
+        .timer-grid {
+            >div {
+                span {
+                    &.time-count {
+                        background: $theme-color;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &.font-lg-size {
+        .timer-grid {
+            >div {
+                .second {
+                    span {
+                        &.time-count {
+                            color: $theme-color;
+                        }
+                    }
+                }
+
+                span {
+                    &.time-count {
+                        color: #222222;
+                        font-size: 67px;
+                        padding: 0px 4px;
+                        width: auto;
+                        display: block;
+                        line-height: 1;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+
+                        @media #{$sm-layout} {
+                            font-size: 40px;
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.time-circles .countdown {
+    display: inline-block;
+    width: 770px !important;
+    max-width: 100%;
+}
+
+
+.time_circles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.time_circles > div {
+    position: absolute;
+    text-align: center;
+}
+
+
+.time_circles > div > h4 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -31px;
+    font-size: 14px !important;
+    color: #999;
+    font-family: $body-font;
+}
+
+
+.time_circles > div > span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px !important;
+    margin-top: 14px;
+    font-weight: 500;
+}
+
+
+.time_circles .textDiv_Days,
+.textDiv_Hours,
+.textDiv_Minutes,
+.textDiv_Seconds {
+  color: #222222;
+  font-size: 30px;
+}
+
+
+
+@media #{$md-layout}{
+    
+}
+
+
+@media #{$sm-layout}{
+
+    .time_circles > div > h4 {
+        bottom: -27px;
+        font-size: 14px !important;
+    }
+    .time_circles > div > span {
+        font-size: 18px !important;
+        position: absolute;
+        bottom: -9px;
+    }
+    .time-circles .countdown {
+        display: block;
+        width: 799px !important;
+        max-width: 100%;
+    }
+
+}
+
+@media #{$large-mobile}{
+    .time_circles > div > h4 {
+        font-size: 10px !important;
+    }
+    .time_circles > div > span {
+        font-size: 15px !important;
+    }
+
+}
+
+
+
+
+
+
+
+

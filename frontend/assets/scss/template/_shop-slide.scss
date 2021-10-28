@@ -1,0 +1,145 @@
+/* =========================
+Shop Slide Area 
+=============================*/
+
+
+.shop-slide-bg-1{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-image: url(img/bg/bg-image-53.jpg);
+
+    @media #{$md-layout} {
+        background-position: 100%;
+        width: 100%;
+        padding: 150px 0;
+    
+    }
+
+    @media #{$sm-layout} {
+        background-position: 100%;
+        width: 100%;
+        padding: 150px 0;
+    
+    }
+}
+.shop-slide-bg-2{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(img/Coffeeshop/slider1.jpg);
+}
+.shop-slide-bg-3{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(img/architecture/slider1.jpg);
+}
+
+
+.shop-slider-area{
+    height: 100vh;
+
+    @media #{$md-layout} {
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+    @media #{$sm-layout} {
+        padding: 100px 0;
+        padding-top: 150px;
+    }
+
+    .shop-slide-wrapper{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        height: 100%;
+
+        @media #{$md-layout} {
+            flex-wrap: wrap;
+        }
+
+        @media #{$sm-layout} {
+            flex-wrap: wrap;
+        }
+
+        .shop-slide-inner{
+            position: relative;
+            width: 50%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            
+            @media #{$md-layout} {
+                width: 100%;
+            }
+            
+            @media #{$sm-layout} {
+                width: 100%;
+            }
+
+            &.shop-slide-info{
+                padding: 50px 50px 50px 150px;
+
+                @media #{$sm-layout} {
+                    padding: 9px 51px 73px 92px;
+                }
+
+                @media #{$md-layout} {
+                    padding: 9px 51px 73px 92px;
+                }
+
+                @media #{$sm-layout} {
+                    padding: 9px 51px 73px 40px;
+                }
+
+                .inner{
+                    max-width: 470px;
+                }
+                
+            }
+
+            &.thumbnail{
+
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

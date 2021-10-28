@@ -1,0 +1,179 @@
+/* ========================
+    Call To Action Area 
+============================*/
+
+.bg_image--9 ,
+.bg_image--10{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.vertical-call-toaction{
+    .spacing{
+        height: 44px;
+    }
+}
+
+
+.creative-gradient--1 {
+    overflow:hidden;
+    position:relative;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(5%,#4EA132),color-stop(47%,#FE5448),color-stop(100%,#FE378D));
+    background: -moz-linear-gradient(230deg,#4EA132 5%,#FE5448 47%,#FE378D 100%);
+    background: -webkit-linear-gradient(230deg,#4EA132 5%,#FE5448 47%,#FE378D 100%);
+    background: -o-linear-gradient(230deg,#4EA132 5%,#FE5448 47%,#FE378D 100%);
+    background: -ms-linear-gradient(230deg,#4EA132 5%,#FE5448 47%,#FE378D 100%);
+    background: linear-gradient(230deg,#4EA132 5%,#FE5448 47%,#FE378D 100%);
+}
+
+
+// .firefly {
+//     width:4px;
+//     height:4px;
+//     position:absolute;
+//     background-color: #ffffff;
+//     border-radius: 50%;
+// }
+  
+.fireflies-wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Call to Action 1 */
+.call-to-action{
+    button{
+        color: #222;
+        background-color: #fff;
+        padding: 0 36px;
+        height: 55px;
+        line-height: 55px;
+        border-width: 0;
+        border-radius: 6px;
+        box-shadow: 0 10px 20px rgba(0,0,0,.07);
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        font-family: $body-font;
+        font-weight: 600;
+        font-size: 14px;
+        i{
+            font-size: 12px;
+            margin-left: 10px;
+            color: #222;
+        }
+        &:hover{
+            -webkit-transform: translateY(-3px);
+            -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+        }
+    }
+
+    &.callto-action--1 {
+        text-align: center;
+        .content{
+            h6{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                line-height: 1.43;
+                margin-bottom: 24px;
+                font-family: $secondary-font;
+            }
+            h3{
+                font-size: 48px;
+                line-height: 1.21;
+                color: #fff;
+                font-weight: 700;
+                font-family: $secondary-font;
+                margin-bottom: 60px;
+                span{
+                    font-family: $playfair-font;
+                    font-style: italic;
+                    font-weight: 700;
+
+                }
+            }
+            
+        }
+    }
+
+    &.callto-action--2 {
+        .content{
+            h3{
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 0;
+                font-size: 36px;
+            }
+        }
+       
+    }
+
+}
+
+// Essential CTA
+.essential-cta{
+    h3{
+        font-size: 40px;
+        line-height: 1.28;
+        font-weight: 200;
+        color: $white;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 18px;
+        max-width: 580px;
+        line-height: 1.89;
+        color: $white;
+        margin: 0 auto;
+    }
+}
+
+.essential-cta-content{
+    h3{
+        font-size: 28px;
+        line-height: 1.25;
+        font-weight: 400;
+        color: $white;
+        margin-bottom: 0;
+        // Responsive
+        @media #{$sm-layout}{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+.essential-btn{
+    text-transform: uppercase;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px !important;
+    border: 2px solid $white !important;
+    box-shadow: none !important; 
+    &:hover{
+        background-color: transparent !important;
+        color: $white !important;
+    }
+    // Responsive
+    @media #{$sm-layout}{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

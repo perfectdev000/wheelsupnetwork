@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "image": "/img/instagram/instagram-md-1.jpg",
+        "like": "1K",
+        "comment": "8"
+    },
+    {
+        "id": 2,
+        "image": "/img/instagram/instagram-md-2.jpg",
+        "like": "6K",
+        "comment": "9"
+    },
+    {
+        "id": 3,
+        "image": "/img/instagram/instagram-md-3.jpg",
+        "like": "3K",
+        "comment": "4"
+    },
+    {
+        "id": 4,
+        "image": "/img/instagram/instagram-md-4.jpg",
+        "like": "1K",
+        "comment": "3"
+    },
+    {
+        "id": 5,
+        "image": "/img/instagram/instagram-md-5.jpg",
+        "like": "2K",
+        "comment": "7"
+    },
+    {
+        "id": 6,
+        "image": "/img/instagram/instagram-md-6.jpg",
+        "like": "1K",
+        "comment": "8"
+    }
+]

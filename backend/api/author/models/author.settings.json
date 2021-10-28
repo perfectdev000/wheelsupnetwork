@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "name": "Author",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "promotions": {
+      "private": true,
+      "via": "author",
+      "collection": "promotions"
+    },
+    "partner_programs": {
+      "private": true,
+      "via": "author",
+      "collection": "partner-programs"
+    },
+    "webinars": {
+      "private": true,
+      "via": "author",
+      "collection": "webinars"
+    },
+    "events": {
+      "private": true,
+      "via": "author",
+      "collection": "events"
+    },
+    "specials": {
+      "private": true,
+      "via": "author",
+      "collection": "specials"
+    },
+    "industries": {
+      "private": true,
+      "via": "author",
+      "collection": "industry"
+    },
+    "news": {
+      "private": true,
+      "via": "author",
+      "collection": "news-item"
+    },
+    "fams": {
+      "private": true,
+      "via": "author",
+      "collection": "fams"
+    },
+    "evergreens": {
+      "private": true,
+      "via": "author",
+      "collection": "evergreen"
+    },
+    "contests": {
+      "via": "author",
+      "private": true,
+      "collection": "contests"
+    }
+  }
+}

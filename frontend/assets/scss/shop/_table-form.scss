@@ -1,0 +1,53 @@
+/*==========================
+    Table Form CSS
+============================*/
+
+.book-table-form{
+    margin-bottom: -170px;
+    padding: 55px 85px 66px 85px;
+    box-shadow: 0 0 40px rgba(51,51,51,0.06);   
+    background-color: #fff;
+    // Responsive
+    @media #{$md-layout}{
+        padding: 55px 60px 66px 60px;
+    }
+    @media #{$sm-layout}{
+        padding: 15px;
+    }
+}
+
+.single-input{
+    input{
+        border: 0;
+        border-bottom: 2px solid #eee;
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+        height: 50px;
+        padding: 3px 20px;
+        color: #777;
+        line-height: 1.75;
+        font-size: 16px;
+    }
+    select{
+        border: 0;
+        border-bottom: 2px solid #eee;
+        background: none;
+        padding-left: 0;
+        padding-right: 0;
+        height: 50px;
+        padding: 3px 20px;
+        color: #777;
+        line-height: 1.75;
+        font-size: 16px; 
+        appearance: none;
+    }
+}
+.table-notice{
+    p{
+        line-height: 1.75;
+        font-size: 16px; 
+        color: #777;
+        margin-bottom: 0;
+    }
+}

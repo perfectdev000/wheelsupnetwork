@@ -1,0 +1,27 @@
+{
+  "Title": "These are our travel agent dedicated sites for the Americas and Europe",
+  "subTitle": "How We Do",
+  "gradations": [
+    {
+      "id": 1,
+      "count": "1",
+      "heading": "www.WheelsUpNetwork.com",
+      "desc": "Sitios de EE. UU. y Canadá, cada uno geo-cercado. Desde fuera de Canadá, verá el sitio de EE. UU",
+      "url": "https://wheelsupnetwork.com"
+    },
+    {
+      "id": 2,
+      "count": "2",
+      "heading": "www.agents-connect.com ",
+      "desc": "(Sitio UK)",
+      "url": "https://gents-connect.com"
+    },
+    {
+      "id": 3,
+      "count": "3",
+      "heading": "www.SoloParaAgentes.com",
+      "desc": "(Sitios de España, México y Colombia, cada uno geo-cercado. Desde fuera de LATAM verás el sitio en español)",
+      "url": "https://soloparaagentes.com"
+    }
+  ]
+}

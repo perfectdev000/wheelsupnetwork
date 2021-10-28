@@ -1,0 +1,38 @@
+{
+    "sectionSubTitle": "NUMBER SPEAKS",
+    "SectionTitle": "We always ready <br> for a <span>challenge.</span>",
+    "SectionTitleText": "Nothing is more important than having a <br> desire deep down to achieve goals.",
+    "counters": [
+        {
+            "id": 1,
+            "count": "1035",
+            "heading": "Successful projects",
+            "desc": "Since its establishment in 2000, Brook Creative has been focusing on project management & implementation through cooperation."
+        },
+        {
+            "id": 2,
+            "count": "2034",
+            "heading": "Unique designs",
+            "desc": "In total, Brook Creative has created more than 2000 projects related to constructional designing and landscaping worldwide."
+        },
+
+        {
+            "id": 3,
+            "count": "2034",
+            "heading": "Unique designs",
+            "icon": "ion-ios-eye-outline"
+        },
+        {
+            "id": 4,
+            "count": "1234",
+            "heading": "Completed projects",
+            "icon": "ion-ios-filing-outline"
+        },
+        {
+            "id": 5,
+            "count": "4585",
+            "heading": "Global partners",
+            "icon": "ion-ios-home-outline"
+        }
+    ]
+}

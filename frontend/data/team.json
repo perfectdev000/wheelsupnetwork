@@ -1,0 +1,66 @@
+{
+    "teamMembers": [
+        {
+            "id": 1,
+            "image": "/img/team/team-1/team-1.jpg",
+            "name": "Caroline Roses",
+            "position": "Designer"
+        },
+        {
+            "id": 2,
+            "image": "/img/team/team-1/team-2.jpg",
+            "name": "Blake Hamilton",
+            "position": "Engineer"
+        },
+        {
+            "id": 3,
+            "image": "/img/team/team-1/team-3.jpg",
+            "name": "Kashara May",
+            "position": "Founder"
+        },
+        {
+            "id": 4,
+            "image": "/img/team/team-1/team-4.jpg",
+            "name": "Peter Parker",
+            "position": "Marketing"
+        },
+
+        {
+            "id": 5,
+            "image": "/img/team/team-3/team-1.jpg",
+            "name": "Caroline Roses",
+            "position": "Designer"
+        },
+        {
+            "id": 6,
+            "image": "/img/team/team-3/team-2.jpg",
+            "name": "Blake Hamilton",
+            "position": "Engineer"
+        },
+        {
+            "id": 7,
+            "image": "/img/team/team-3/team-3.jpg",
+            "name": "Kashara May",
+            "position": "Founder"
+        },
+
+        {
+            "id": 8,
+            "image": "/img/team/team-2/team-1.jpg",
+            "name": "Caroline Roses",
+            "position": "Designer"
+        },
+        {
+            "id": 9,
+            "image": "/img/team/team-2/team-2.jpg",
+            "name": "Blake Hamilton",
+            "position": "Engineer"
+        },
+        {
+            "id": 10,
+            "image": "/img/team/team-2/team-3.jpg",
+            "name": "Kashara May",
+            "position": "Founder"
+        }
+    ]
+}

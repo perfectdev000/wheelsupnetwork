@@ -1,0 +1,269 @@
+/*====================
+	Version: 1.0
+======================*/
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|___ Default Styles
+	|	|___ variables
+	|	|___ mixins
+	|	|___ reset
+	|	|___ typography
+	|	|___ animations
+	|	|___ shortcode
+	|
+	|
+	|___Elements Styles
+	|	|___ Button
+	|	|___ section-title
+	|	|___ service
+	|	|___ counterup
+	|	|___ team
+	|	|___ blog-list
+	|	|___ contact
+	|	|___ about
+	|	|___ call-to-action
+	|	|___ slick-arrow
+	|	|___ motivational-archive
+	|	|___ social
+	|	|___ shortnote
+	|	|___ flexable-image-slide
+	|	|___ carousel-slider
+	|	|___ countdown
+	|	|___ progress-charts
+	|	|___ gradation
+	|	|___ typed-text
+	|	|___ Politic
+	|	|___ pricing-plans
+	|	|___ career
+	|	|___ maintenance
+	|	|___ contagion
+	|	|___ player
+	|	|___ 404
+	|	
+	|
+	|
+	|___Components Styles
+	|	|___ video 
+	|	|___ breadcrumb 
+	|	|___ instagram
+	|	|___ popup
+	|	|___ shopping-cart
+	|	|___ mega-menu
+	|	|___ toolbar
+	|	|___ typography
+	|	|___ list
+	|	|___ pricing-box
+	|	|___ icon-boxes
+	|	|___ dividers
+	|	|___ message-box
+	|	|___ accordion
+	|	|___ google-map
+	|	|___ rows-column
+	|	|___ info-boxes
+	|	|___ loader
+	|
+	|
+	|
+	|___Portfolio Styles
+	|	|___ portfolio-grid 
+	|	|___ portfolio-grid-metro 
+	|	|___ portfolio-caption
+	|	|___ mesonry-button
+	|	|___ paralax
+	|	|___ has-center
+	|	|___ type-hover
+	|	|___ portfolio-details
+	|
+	|
+	|
+	|___Blog Grid Styles
+	|	|___ blod-grid 
+	|	|___ pagination 
+	|	|___ blog-mesonry
+	|	|___ blog-grid-no-flex
+	|	|___ blog-grid-minimal
+	|	|___ blog-details
+	|	|___ blog-sidebar
+	|
+	|
+	|
+	|___Shop Sidebar Styles
+	|	|___ shop-sidebar 
+	|	|___ single-product 
+	|	|___ cart
+	|	|___ checkout
+	|	|___ compare
+	|	|___ my-account
+	|	|___ vertical-slide
+	|	|___ login
+	|	|___ table-form
+	|
+	|
+	|
+	|___Template Styles
+	|	|___ header
+	|	|___ sidebar-header
+	|	|___ navigation
+	|	|___ banner
+	|	|___ feature
+	|	|___ startup-service
+	|	|___ freelancer
+	|	|___ hamber-menu
+	|	|___ left-vertical-header
+	|	|___ fullscreen-slider
+	|	|___ sidebar-mobilemenu
+	|	|___ header-broadsheets
+	|	|___ onepage
+	|	|___ foodie
+	|	|___ portfolio-slide
+	|	|___ photo-slide
+	|	|___ vertical-slide
+	|	|___ musician
+	|	|___ vertical-slider-portfolio
+	|	|___ shop-slide
+	|	|___ product
+	|	|___ presentation
+	|	|___ footer
+	|	|___ Color Variation
+	|	|___ color-2
+	|	|___ font-variation
+	|	|___ preview
+	|	|___ responsive
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
+/*===================================
+    Default Styles
+====================================*/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/animations';
+@import 'default/shortcode';
+@import 'default/spacing';
+@import '../fonts/fontawesome-free/css/fontawesome-all.min.css';
+@import '../css/lauis.css';
+@import '../css/ionicons.css';
+@import '../css/linea-font.css';
+@import '../css/cerebrisans.css';
+@import '../css/animation.css';
+
+
+/*====================================
+	Elements Styles
+=====================================*/
+@import 'elements/button';
+@import 'elements/section-title';
+@import 'elements/service';
+@import 'elements/counterup';
+@import 'elements/team';
+@import 'elements/brand';
+@import 'elements/blog-list';
+@import 'elements/contact';
+@import 'elements/about';
+@import 'elements/call-to-action';
+@import 'elements/swiper-arrow';
+@import 'elements/motivational-archive';
+@import 'elements/social';
+@import 'elements/shortnote';
+@import 'elements/flexable-image-slide';
+@import 'elements/carousel-slider';
+@import 'elements/progress-charts';
+@import 'elements/gallery';
+@import 'elements/gradation';
+@import 'elements/career';
+@import 'elements/contagion';
+@import 'elements/testimonial';
+@import 'elements/tabs';
+
+
+/*================================
+	Components Style
+=================================*/
+@import 'components/video';
+@import 'components/breadcrumb';
+@import 'components/instagram';
+@import 'components/popup';
+@import 'components/mega-menu';
+@import 'components/typography';
+@import 'components/list';
+@import 'components/pricing-box';
+@import 'components/icon-boxes';
+@import 'components/dividers';
+@import 'components/message-box';
+@import 'components/accordion';
+@import 'components/googlemap';
+@import 'components/rows-column';
+@import 'components/info-boxes';
+
+
+/*==================================
+	Portfolio Styles
+===================================*/
+@import 'portfolio/portfolio-grid';
+@import 'portfolio/portfolio-grid-metro';
+@import 'portfolio/portfolio-caption';
+@import 'portfolio/masonry-button';
+@import 'portfolio/has-center';
+@import 'portfolio/type-hover';
+@import 'portfolio/portfolio-details';
+
+
+/*=====================================
+	Blog Grid Styles
+======================================*/
+@import 'blog-grid/blog-grid';
+@import 'blog-grid/pagination';
+@import 'blog-grid/blog-grid-no-flex';
+@import 'blog-grid/blog-grid-minimal';
+@import 'blog-grid/blog-details';
+@import 'blog-grid/blog-sidebar';
+
+
+/*====================================
+	Shop Sidebar Styles
+=====================================*/
+@import 'shop/table-form';
+
+
+/*=================================
+	Template Styles
+==================================*/
+@import 'template/header';
+@import 'template/sidebar-header';
+@import 'template/feature';
+@import 'template/startup-service';
+@import 'template/freelancer';
+@import 'template/hamber-menu';
+@import 'template/left-vertical-header';
+@import 'template/fullscreen-slider';
+@import 'template/sidebar-mobilemenu';
+@import 'template/onepage';
+@import 'template/portfolio-slide';
+@import 'template/photo-slide';
+@import 'template/vertical-slide';
+@import 'template/musician';
+@import 'template/product';
+@import 'template/presentation';
+@import 'template/footer';
+
+
+/*================================
+	Color Variation
+=================================*/
+@import 'color/color-2';
+@import './color/font-variation';
+@import 'color/preview';
+
+/*================================
+	Themes
+=================================*/
+@import './themes/themes';
+

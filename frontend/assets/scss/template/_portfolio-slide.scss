@@ -1,0 +1,88 @@
+/*=========================
+    Portfolio Slide 
+============================*/
+.single-portfolio-slide{
+    position: relative;
+    .fullscreen{
+        @media #{$sm-layout} {
+            min-height: auto;
+            padding: 100px 0;
+        }
+    }
+    .inner{
+        text-align: left;
+        max-width: 600px;
+        background-color: $black;
+        padding: 64px 68px 62px;
+        position: relative;
+        left: -100px;
+
+        // res
+        @media #{$md-layout} {
+            left: -50px;
+        }
+        @media #{$sm-layout} {
+            left: 0;
+            padding: 44px 33px 32px;
+            background-color: rgba($black, 0.7);
+        }
+
+        .info{
+            h3{
+                &.heading{
+                    margin-bottom: 18px;
+                    font-family: $heading-font;
+                    a{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .category{
+                margin-bottom: 36px;
+                a{
+                    font-size: 16px;
+                    color: #999;
+                    font-family: $heading-font;
+                }
+            }
+            .slide-btn{
+                a{
+                    box-shadow: none;
+                    border-radius: 40px;
+                    border: 2px solid hsla(0,0%,100%,.3);
+                    height: 57px;
+                    line-height: 53px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                    background: transparent;
+                    padding: 0 36px;
+                    position: relative;
+                    display: inline-block;
+                    &:hover{
+                        background: #fff;
+                        color: #222;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_ads",
+  "info": {
+    "name": "banner ads"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.banner"
+    },
+    "sites": {
+      "collection": "site",
+      "via": "banner_ads",
+      "dominant": true
+    }
+  }
+}

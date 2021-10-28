@@ -1,0 +1,148 @@
+/* ==========================
+    Blog Grid No Flex 
+=============================*/
+
+.blog-grid-no-flex {
+    position: relative;
+    .post-thumb{
+        overflow: hidden;
+        a{
+            img{
+                transition: all .5s cubic-bezier(.57,.21,.69,1);
+                width: 100%;
+            }
+        }
+    }
+    &:hover{
+        .post-thumb{
+            overflow: hidden;
+            a{
+                img{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    .post-content{
+        .post-inner{
+            h5{
+                &.heading{
+                    font-size: 24px;
+                    line-height: 1.375;
+                    margin-bottom: 0;
+                }
+                &.text-white{
+                    a{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        &.position-bottom{
+            position: absolute;
+            bottom: 0;
+            padding: 30px 50px 50px;
+            width: 100%;
+            z-index: 2;
+
+            @media #{$sm-layout} {
+                padding: 18px 20px 28px;
+            }
+        }
+    }
+    &.post-overlay{
+        z-index: 2;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    }
+    .post-quote{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        &::before{
+            content: "\f10e";
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            font-size: 26px;
+            line-height: 22px;
+            color: $theme-color;
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+        }
+    }
+}
+
+
+/* Post Meta */
+
+.post-meta{
+    > div{
+        position: relative;
+        display: inline-block;
+    }
+    .post-date{
+        font-weight: 500;
+        letter-spacing: 0em;
+        line-height: 1.58;
+        font-size: 14px;
+        color: $body-color;
+    }
+    .post-category{
+        padding-left: 15px;
+        margin-left: 7px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        line-height: 1.58;
+        font-size: 14px;
+        a{
+            color: $body-color;
+        }
+
+        &::before{
+            content: "|";
+            position: absolute;
+            top: 0;
+            left: 2px;
+        }
+    }
+    &.text-white{
+        .post-date{
+            color: #ffffff;
+        }
+        .post-category{
+            a{
+                color: #ffffff !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

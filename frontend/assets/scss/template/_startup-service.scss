@@ -1,0 +1,99 @@
+/* =======================
+    Start Up Service 
+==========================*/
+.startupservice-wrapper{
+    padding: 150px 100px 150px 316px;
+    
+    @media #{$laptop-device} {
+        padding: 50px 46px 50px 66px;
+    }
+
+    @media #{$lg-layout, $md-layout} {
+        padding: 90px 34px 90px 66px;
+    }
+
+    @media #{$sm-layout} {
+        padding: 90px 15px 90px 35px;
+    }
+}
+
+/* Start Single Motivationa Speace */
+
+.single-motive-speach{
+    display: flex;
+    .icon{
+        font-size: 40px;
+        margin-right: 20px;
+        display: inline-block;
+        flex-shrink: 0;
+        i{
+            font-size: 40px;
+        }
+    }
+
+    .content{
+        flex-grow: 1;
+        h4{
+            font-size: 18px;
+            line-height: 1.4;
+            margin-bottom: 21px;
+            font-family: $body-font;
+            font-weight: 600;
+            margin: 0 0 18px;
+        }
+        p{
+            max-width: 450px;
+            margin-bottom:7px;
+        }
+    }
+
+    &.text-white{
+        .icon{
+            i{
+                color: #ffffff;
+            }
+        }
+        .content{
+            h4{
+                color: #ffffff;
+            }
+            p{
+                color: #ffffff;
+            }
+        }
+    }
+
+    &.theme-color-2{
+        .icon{
+            i{
+                color: $theme-color-2;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start:dev": "NODE_ENV=development strapi start",
+    "start": "NODE_ENV=production NODE_OPTIONS=--max-old-space-size=8192 strapi start",
+    "build": "NODE_ENV=production strapi build",
+    "build:dev": "NODE_ENV=development strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.48",
+    "@mailchimp/mailchimp_transactional": "^1.0.27",
+    "axios": "^0.21.1",
+    "is-image-url": "^1.1.8",
+    "knex": "0.21.18",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.27",
+    "pg": "8.6.0",
+    "sqlite3": "^5.0.2",
+    "strapi": "3.6.1",
+    "strapi-admin": "3.6.1",
+    "strapi-connector-bookshelf": "3.6.1",
+    "strapi-plugin-content-manager": "3.6.1",
+    "strapi-plugin-content-type-builder": "3.6.1",
+    "strapi-plugin-documentation": "3.6.1",
+    "strapi-plugin-email": "3.6.1",
+    "strapi-plugin-graphql": "3.6.1",
+    "strapi-plugin-i18n": "3.6.1",
+    "strapi-plugin-upload": "3.6.1",
+    "strapi-plugin-users-permissions": "3.6.1",
+    "strapi-utils": "3.6.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "9070f11a-c917-49c5-8865-5b9e1d12519f",
+    "template": "https://github.com/strapi/strapi-template-blog",
+    "starter": "https://github.com/strapi/strapi-starter-nuxt-blog"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,4 @@
+pm2 stop 0
+git pull origin master
+pm2 start 0
+pm2 logs 0

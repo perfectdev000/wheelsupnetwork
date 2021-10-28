@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "logo": "/img/testimonial/clint-4/logo-canada-usa.png",
+        "url" : "https://www.WheelsUpNetwork.com"
+    },
+    {
+        "id": 2,
+        "logo": "/img/testimonial/clint-4/logo-global-agentes.png",
+        "url" : "https://www.linkedin.com/company/global-agents-company/"
+    },
+    {
+        "id": 3,
+        "logo": "/img/testimonial/clint-4/logo-spain-mexico-col.png",
+        "url": "https://www.SoloParaAgentes.com"
+    },
+    {
+        "id": 4,
+        "logo": "/img/testimonial/clint-4/logo-uk.png",
+        "url": "https://www.agents-connect.com"
+
+    },
+    {
+        "id": 5,
+        "logo": "/img/testimonial/clint-4/argentina.png",
+        "url": "https://www.SoloParaAgentes.ar"
+
+    }
+
+]
